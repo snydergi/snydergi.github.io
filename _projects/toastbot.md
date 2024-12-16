@@ -7,11 +7,19 @@ permalink: "toastbot.html"
 ---
 
 ## Overview
-Toastbot is a ros2 package that relies on the moveitapi package to command an Emika Franka Panda robot pick up a piece of bread, toast it, and place it on a plate. The package uses April tags to track objects in the physical environment of the robot and to track when object states change.
+The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate.
 ### Collaborators
+This project was done in collaboration with the following students:
 * Sharwin Patil (https://github.com/Sharwin24)
 * Asa Rogers (https://github.com/asarogers)
 * Tony Shilati (https://github.com/tony-shilati)
+
+### Demo Video
+
+<video src="/public/images/projectImages/toastDemo.mp4" width="1000" controls></video>
+
+### MoveIt API
+
 
 ### Computer Vision
 
