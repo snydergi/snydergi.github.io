@@ -2,19 +2,17 @@
 layout: about
 path: /about
 url: index.html
-image: http://unsplash.it/400?random
+image: "/public/images/Headshot.jpg"
 ---
 
-## Overview
-Lorem ipsum dolor sit amet, purto tota in vel, exerci discere apeirian has in. Nec noster iracundia eu, utroque facilis ad has. Alii argumentum no his, omnis iusto scripta vim in, ipsum ridens mel at. Has homero phaedrum no, ea autem affert facilis usu, has possim meliore perpetua id. Errem iisque mea ex, option ocurreret no est. Sea facer ullamcorper ne, cu dictas discere repudiandae sea.
-
-His nemore audiam consequat ad, no augue choro assueverit mei. Zril offendit tincidunt ne quo. At commodo integre alienum sea, cu vocent fuisset suscipit nam. Eum ex tation omnesque adversarium, mutat autem putant te nam. Id vix facilis complectitur, vis vitae vivendo euripidis ea, fugit eirmod an vix.
-
-Ad case nemore equidem mea. Duo te iuvaret appetere appellantur, sint scaevola usu cu. Eum ne aeque ridens prompta. At legendos vulputate eos, pro illum iuvaret cu, ludus vituperata usu no.
-
-Mel magna discere in. Mea ea dicit homero perfecto. Eam nulla facete scribentur in. Vide volutpat laboramus est cu, usu cu impetus dignissim. Ex pro decore impetus. Ius nihil iisque deterruisset an, ex sanctus verterem his. Doming prompta insolens est ut.
+## Academic Interests
+From a young age, I have been interested in Robotics. It started with Transformers, Star Wars, and Power Rangers, but quickly became an academic pursuit. The field of robotics has always fascinated me with its unique solutions, problems, and range of applicability. I am invested in the potential of robotics to shape the future. My interest is particularly drawn to Biological-Inspired Robotics and Design, Swarm Intelligence and Behavior, and Low-Cost Modular Robot Design. I feel that these areas have potential for major breakthroughs in the capabilities of robotics and I am eager to get involved in the next step of the future.
 
 ### Research interests
-* Interest 1
-* Interest 2
-* Interest 3
+* Bio-Inspired Robotics
+* Swarm/Multi-Agent Systems
+* Modular Robot Design
+* Low-Cost, Scalability
+
+## Personal Interests
+I have always tried to enrich my time outside of academic work with a plethora of activities. While I do not consider myself an athlete by any sense of the word, I enjoy being active with Volleyball, Climbing, and Ping Pong. For relaxation, I am a big foodie, cook, movie-watcher, and game-player whether it be video games, board games, or role-playing games.​ I also love music, wood working, and reading. I am the type that has a ton of little projects always going on for hobby and fun.
