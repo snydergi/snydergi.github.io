@@ -2,14 +2,19 @@
 layout: contact
 path: /contact
 url: index.html
-image: http://unsplash.it/400?random
+image: "/public/images/Headshot.jpg"
 ---
 
-## Quick Spiel
-Lorem ipsum dolor sit amet, tota primis copiosae id quo. Melius eligendi elaboraret pri et, eam menandri platonem te. Tollit iudicabit gloriatur per ad. Ad diceret recteque eum, eu commodo petentium qui. No aliquid delectus eam, dicta eripuit convenire te nec. Vix no veritus dignissim. Erat ferri veniam ut eos, pro ex eius error intellegat, his te graecis oporteat honestatis.
+## Quick Facts
+I graduated from Rose-Hulman Institute of Technology in May 2024, magna cum laude with a Bachelor of Science degree in Mechanical Engineering. In addition to that, I received Robotics and Computer Science minors. I am currently attending Northwestern University, pursuing a Master of Science in Robotics with an anticipated graduation date in December 2025.
 
-* Phone: (123) 456-7890
-* Email: youremail@youremail.com
-* Address: 2145 Sheridan Rd., Evanston, IL, 60201
+### See More of Me
+* LinkedIn: www.linkedin.com/in/graysonsnyder
+* GitHub: https://github.com/snydergi
 
-Ad case nemore equidem mea. Duo te iuvaret appetere appellantur, sint scaevola usu cu. Eum ne aeque ridens prompta. At legendos vulputate eos, pro illum iuvaret cu, ludus vituperata usu no.
+### Contact Info
+* Phone: (765) 650-0970
+* Email: grasnyder2001@gmail.com
+* Alternate Email: graysonsnyder2025@u.northwestern.edu
+
+If you would like to get in touch to discuss any projects more, or ask any questions about me or my work, please contact me at one of the options listed above.
