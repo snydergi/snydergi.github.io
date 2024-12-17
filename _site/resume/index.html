@@ -9,41 +9,35 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>7-DOF Food Preparation - Grayson Snyder</title>
-<meta name="description" content="ROS2, MoveIt, RealSense">
+<!-- begin _includes/seo.html --><title>Resume - Grayson Snyder</title>
+<meta name="description" content="M.S. in Robotics Student">
 
 
   <meta name="author" content="Grayson Snyder">
   
-  <meta property="article:author" content="Grayson Snyder">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Grayson Snyder">
-<meta property="og:title" content="7-DOF Food Preparation">
-<meta property="og:url" content="http://localhost:4000/portfolio_featured/toastbot/">
+<meta property="og:title" content="Resume">
+<meta property="og:url" content="http://localhost:4000/resume/">
 
 
-  <meta property="og:description" content="ROS2, MoveIt, RealSense">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/projectImages/toastImages/toast.jpg">
-
-
-
-
-
-  <meta property="article:published_time" content="2024-12-17T15:22:49-06:00">
+  <meta property="og:description" content="M.S. in Robotics Student">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/portfolio_featured/toastbot/">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/resume/">
 
 
 
@@ -266,7 +260,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a></li><li><a href="#project-objective">Project Objective</a><ul><li><a href="#collaborators">Collaborators</a></li><li><a href="#moveit-api">MoveIt API</a><ul><li><a href="#subcomponent-breakdown">Subcomponent Breakdown</a></li></ul></li><li><a href="#workspace-planning">Workspace Planning</a></li><li><a href="#computer-vision">Computer Vision</a></li><li><a href="#multi-threaded-executor">Multi-Threaded Executor</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
+              
 
             </nav>
           </aside>
@@ -276,8 +270,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="7-DOF Food Preparation">
-    <meta itemprop="description" content="ROS2, MoveIt, RealSense">
+    <meta itemprop="headline" content="Resume">
+    
     
     
 
@@ -285,7 +279,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/portfolio_featured/toastbot/" class="u-url" itemprop="url">7-DOF Food Preparation
+            <a href="http://localhost:4000/resume/" class="u-url" itemprop="url">Resume
 </a>
           </h1>
           
@@ -296,48 +290,11 @@
 
       <section class="page__content e-content" itemprop="text">
         <!-- Moved TOC to sidebar.html -->
-        <h2 id="featured-video">Featured Video</h2>
-<iframe width="560" height="315" src="/assets/images/projectImages/toastImages/toastDemo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        <iframe width="100%" height="800" src="/assets/images/misc/resume.pdf">
 
-<h2 id="project-objective">Project Objective</h2>
-<p>The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate.</p>
 
-<h3 id="collaborators">Collaborators</h3>
-
-<p>This project was done in collaboration with the following students:</p>
-
-<ul>
-  <li>Sharwin Patil (<a href="https://github.com/Sharwin24">https://github.com/Sharwin24</a>)</li>
-  <li>Asa Rogers (<a href="https://github.com/asarogers">https://github.com/asarogers</a>)</li>
-  <li>Tony Shilati (<a href="https://github.com/tony-shilati">https://github.com/tony-shilati</a>)</li>
-</ul>
-
-<h3 id="moveit-api">MoveIt API</h3>
-
-<p>Prior to the start of the ToastBot project, the group developed an API to to simply interface new ROS2 nodes with the Emika Franka Panda robot’s MoveIt package. The API consists of three main subcomponents: RobotState, ScenePlanner, and MotionPlanner. The three are abstracted within the MotionPlanningInterface, which can be imported into ROS2 nodes to make motion requests of the robot arm.</p>
-
-<h4 id="subcomponent-breakdown">Subcomponent Breakdown</h4>
-
-<p>The ScenePlanner component can be used to update the move group planning scene. It allows users to add and remove boxes, attach and detach collision objects from the end effector, and load multiple collision objects at once. It is capable of adding objects of different shapes and dimensions as specified by the user for each function. Use of the ScenePlanner is critical particularly in instances where the robot is grasping a solid object and must plan paths around obstacles, accounting for said object in its grasp.</p>
-
-<p>The RobotState component performs forward and inverse kinematic caluclations for the Emika Franka Panda robot arm for use in determining current or desired poses, or the angles required to achieve them.</p>
-
-<p>The MotionPlanner component contains the bulk of the API’s functionality. It provides utilities to plan, execute, and manage robot trajectories using joint configurations, Cartesian paths, and predefined named configurations. Additionally, it allows for control of the robot end-effector. The MotionPlanner serves as a ROS2 Action Client to he MoveGroup node running on the robot arm.</p>
-
-<p>The key components of the API used in the ToastBot project are the RobotState and MotionPlanner.</p>
-
-<h3 id="workspace-planning">Workspace Planning</h3>
-
-<p>With limited workspace, designing and arranging the components of the task was an important consideration. To aid in this, we created many 3d-printed fixtures including a bread holder, toaster lever extension, plate, brush holder, and butter dish holder. Each model was designed to have a slot for an April Tag such that offsets to points of interest on the model would be quick to determine. In early stages of the project, a virtual recreation of the scene using the MoveItAPI ScenePlanner was considered, but due to the reliability of the April Tag positioning and the desired poses, collisions were not of major concern and it was ultimately unused.</p>
-
-<h3 id="computer-vision">Computer Vision</h3>
-
-<p>Vision was a key aspect to the success of this project. We used an Intel RealSense D435i camera mounted outside the workspace of the arm on a tripod to capture the entire scene. With the camera in place, we used April Tags to create transforms between each object in the scene and the robot.</p>
-
-<h3 id="multi-threaded-executor">Multi-Threaded Executor</h3>
-
-<h2 id="source-code">Source code</h2>
-<p><a href="https://github.com/snydergi/ToastBot">Github Repository</a></p>
+ 
+</iframe>
 
         
       </section>
@@ -351,28 +308,9 @@
 
       </footer>
 
-      <section class="page__share">
-  
-
-  <!-- <a href="https://twitter.com/intent/tweet?text=7-DOF+Food+Preparation%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Ftoastbot%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Ftoastbot%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Ftoastbot%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
+      
 
       
-  <nav class="pagination">
-    
-      <a href="/portfolio_featured/swarmProposal/" class="pagination--pager" title="Proposal - Development of Blended Swarm Communication Methods
-">Previous</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">Next</a>
-    
-  </nav>
-
     </div>
 
     

@@ -58,7 +58,7 @@ plugins:
 
 author:
   name   : "Grayson Snyder"
-  avatar : "/assets/images/Headshot.jpg"
+  avatar : "/assets/images/misc/Headshot.jpg"
   bio    : "MS in Robotics @ Northwestern"
   links:
     - label: "Evanston, IL"

@@ -1,4 +1,8 @@
 main:
+  - title: "Portfolio"
+    url: /
+  - title: "Resume"
+    url: /resume/
   - title: "About"
     url: /about/
   # - title: "Contact"

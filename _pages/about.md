@@ -5,40 +5,39 @@ toc: true
 classes: wide
 ---
 
-<!-- ![saltbot_pose]({{ site.url }}{{ site.baseurl }}/assets/images/saltbot_pose.jpg)
-
-Hello! I'm Srikanth, a current M.S. in Robotics student at Northwestern University. I am most interested in the field of mobile robotics with a focus in sensing, navigation, and autonomy. I'm excited to develop interesting and impactful robots that go where other robots haven't gone before! I bring coding experience with ROS2, Python, C++, and C, as well as multiple years of industry experience working in design and field robotics. I am currently seeking roles in robotic software, autonomy, and control.
-
-My most recent project involves creating an autonomous roadsalt spreading robot or "saltbot" for melting ice in the cold Chicago winter. Feel free to check out this project and many more on my main page [HERE]({{ site.url }}{{ site.baseurl }})! -->
-
-<!-- ## Professional Experience
+## Professional Experience
 
 <table>
   <tbody>
     <tr>
-      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/sei.jpeg" alt="sei" width="60"></td>
+      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/misc/roseR.png" alt="Rose" width="60"></td>
       <td style="border-bottom-width:0;">
-      <strong>CMU Software Engineering Institute</strong> <br> 01/2025 - Present <br> Associate Autonomy Engineer</td>
-      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/hitachi.png" alt="hitachi" width="60"></td>
+      <strong>RHIT Mechanical Engineering Department</strong> <br> 09/2023 - 08/2024 <br> Teaching Assistant: Mechatronics, Robotics Engineering </td>
+      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/misc/dekaLogo.jpeg" alt="DEKA" width="60"></td>
       <td style="border-bottom-width:0;">
-      <strong>Hitachi Rail STS</strong> <br> 06/2022 - 08/2023 <br> Associate Hardware Engineer</td>
-      <td style = "border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/gather.png" alt="gather" width="60"></td>
+      <strong>DEKA Research and Development</strong> <br> 05/2023 - 09/2023 <br> Control Systems Engineer Intern </td>
+    </tr>
+    <tr>
+      <td style = "border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/misc/ehLogo.png" alt="E+H" width="60"></td>
       <td style = "border-bottom-width:0;">
-      <strong>Gather AI</strong> <br> 11/2020 - 06/2022 <br> Field Ops Engineer (Robotics)</td>
+      <strong>Endress+Hauser Temperature+System Products</strong> <br> 05/2022 - 09/2022 <br> Mechanical Engineering Intern </td>
+      <td style = "border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/misc/venturesLogo.png" alt="Ventures" width="60"></td>
+      <td style = "border-bottom-width:0;">
+      <strong>Rose-Hulman Ventures</strong> <br> 05/2021 - 09/2021 <br> Mechanical Engineering Intern </td>
     </tr>
   </tbody>
-</table> -->
+</table>
 
 ## Education
 
 <table>
   <tbody>
     <tr>
-      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/northwestern.jpg" alt="nu" width="60"></td>
+      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/misc/northwestern.jpg" alt="nu" width="60"></td>
       <td style="border-bottom-width:0;">
         <strong>Northwestern University</strong> <br> 09/2024 - 12/2025 <br> M.S. in Robotics
       </td>
-      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/roseR.png" alt="rose" width="60"></td>
+      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/misc/roseR.png" alt="rose" width="60"></td>
       <td style="border-bottom-width:0;">
         <strong>Rose-Hulman Institute of Technology</strong> <br> 08/2020 - 05/2024 <br> B.S. in Mechanical Engineering, Minor in Robotics and Computer Science
       </td>
@@ -46,5 +45,14 @@ My most recent project involves creating an autonomous roadsalt spreading robot 
   </tbody>
 </table>
 
+## Academic Interests
+My academic interests have always been geared toward robotics due to the fields range of applicability, unique solutions, and challenging problems. I am fascinated with cutting edge technology and want to contribute to the development of novel solutions to unsolved problems. I hope to build on intersectionality between sustainability and robotics in an effort to preserve humanity. Robots have potential for major breakthroughs in capability and I am eager to get involved in the next step of the future.
 
- 
+### Research interests
+* Bio-Inspired Robotics
+* Swarm/Multi-Agent Systems
+* Modular Robot Design
+* Low-Cost, Scalable Robots
+
+## Personal Interests
+I try to enrich my time outside of academic work with a plethora of activities. While I do not consider myself an athlete, I do enjoy being active with Volleyball, Climbing, and Ping Pong. For relaxation, I am a big foodie, cook, movie-watcher, and game-player whether it be video games, board games, or role-playing games.​ I also love music, wood working, and reading. I am the type that has a ton of little projects always going on for hobby and fun.
