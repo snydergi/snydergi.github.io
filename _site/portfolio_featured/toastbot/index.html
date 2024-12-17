@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-12-17T15:36:42-06:00">
+  <meta property="article:published_time" content="2024-12-17T16:23:05-06:00">
 
 
 
@@ -269,7 +269,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a></li><li><a href="#project-objective">Project Objective</a><ul><li><a href="#collaborators">Collaborators</a></li><li><a href="#moveit-api">MoveIt API</a><ul><li><a href="#subcomponent-breakdown">Subcomponent Breakdown</a></li></ul></li><li><a href="#workspace-planning">Workspace Planning</a></li><li><a href="#computer-vision">Computer Vision</a></li><li><a href="#multi-threaded-executor">Multi-Threaded Executor</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
+              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a></li><li><a href="#project-objective">Project Objective</a><ul><li><a href="#collaborators">Collaborators</a></li></ul></li><li><a href="#outline">Outline</a><ul><li><a href="#moveit-api">MoveIt API</a></li><li><a href="#workspace-planning">Workspace Planning</a></li><li><a href="#computer-vision">Computer Vision</a></li><li><a href="#multi-threaded-executor">Multi-Threaded Executor</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
 
             </nav>
           </aside>
@@ -315,11 +315,13 @@
   <li>Tony Shilati (<a href="https://github.com/tony-shilati">https://github.com/tony-shilati</a>)</li>
 </ul>
 
+<h2 id="outline">Outline</h2>
+
 <h3 id="moveit-api">MoveIt API</h3>
 
 <p>Prior to the start of the ToastBot project, the group developed an API to to simply interface new ROS2 nodes with the Emika Franka Panda robot’s MoveIt package. The API consists of three main subcomponents: RobotState, ScenePlanner, and MotionPlanner. The three are abstracted within the MotionPlanningInterface, which can be imported into ROS2 nodes to make motion requests of the robot arm.</p>
 
-<h4 id="subcomponent-breakdown">Subcomponent Breakdown</h4>
+<p><b>Subcomponent Breakdown</b></p>
 
 <p>The ScenePlanner component can be used to update the move group planning scene. It allows users to add and remove boxes, attach and detach collision objects from the end effector, and load multiple collision objects at once. It is capable of adding objects of different shapes and dimensions as specified by the user for each function. Use of the ScenePlanner is critical particularly in instances where the robot is grasping a solid object and must plan paths around obstacles, accounting for said object in its grasp.</p>
 
@@ -372,7 +374,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/portfolio_featured/undergradResearch/" class="pagination--pager" title="Low-Cost Position-Controllable Planar Arm
+">Next</a>
     
   </nav>
 

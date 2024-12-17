@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   M.S. in Robotics Student
 twitter_username: username
 github_username: snydergi
-minimal_mistakes_skin: 'dark' #dark # default
+minimal_mistakes_skin: '_dirt' #dark # default
 search: true
 
 # Build settings

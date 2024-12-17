@@ -1,7 +1,7 @@
 ---
 title: "Proposal - Development of Blended Swarm Communication Methods"
 author_profile: true
-key: 2
+key: 3
 toc: true
 excerpt: ""
 header:

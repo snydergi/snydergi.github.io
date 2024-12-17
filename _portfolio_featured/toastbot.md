@@ -22,11 +22,13 @@ This project was done in collaboration with the following students:
 * Asa Rogers (<https://github.com/asarogers>)
 * Tony Shilati (<https://github.com/tony-shilati>)
 
+## Outline
+
 ### MoveIt API
 
 Prior to the start of the ToastBot project, the group developed an API to to simply interface new ROS2 nodes with the Emika Franka Panda robot's MoveIt package. The API consists of three main subcomponents: RobotState, ScenePlanner, and MotionPlanner. The three are abstracted within the MotionPlanningInterface, which can be imported into ROS2 nodes to make motion requests of the robot arm.
 
-#### Subcomponent Breakdown
+<b>Subcomponent Breakdown</b>
 
 The ScenePlanner component can be used to update the move group planning scene. It allows users to add and remove boxes, attach and detach collision objects from the end effector, and load multiple collision objects at once. It is capable of adding objects of different shapes and dimensions as specified by the user for each function. Use of the ScenePlanner is critical particularly in instances where the robot is grasping a solid object and must plan paths around obstacles, accounting for said object in its grasp.
 
