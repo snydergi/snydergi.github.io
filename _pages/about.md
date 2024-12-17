@@ -3,15 +3,6 @@ permalink: /about/
 title: "About"
 toc: true
 classes: wide
-gallery4333:
-  - url: /assets/images/dad_vails18.jpg
-    image_path: /assets/images/dad_vails18.jpg
-    alt: "Dad Vail Regatta 2018"
-    title: "Dad Vail Regatta 2018"
-  - url: /assets/images/knecht8_19.png
-    image_path: /assets/images/knecht8_19.png
-    alt: "Knecht Cup 2019"
-    title: "Knecht Cup 2019"
 ---
 
 <!-- ![saltbot_pose]({{ site.url }}{{ site.baseurl }}/assets/images/saltbot_pose.jpg)
@@ -47,7 +38,7 @@ My most recent project involves creating an autonomous roadsalt spreading robot 
       <td style="border-bottom-width:0;">
         <strong>Northwestern University</strong> <br> 09/2024 - 12/2025 <br> M.S. in Robotics
       </td>
-      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/Pitt.png" alt="pitt" width="60"></td>
+      <td style="border-bottom-width:0;"><img src="{{site.baseurl}}/assets/images/roseR.png" alt="rose" width="60"></td>
       <td style="border-bottom-width:0;">
         <strong>Rose-Hulman Institute of Technology</strong> <br> 08/2020 - 05/2024 <br> B.S. in Mechanical Engineering, Minor in Robotics and Computer Science
       </td>

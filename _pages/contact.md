@@ -1,10 +1,10 @@
 # My Contact Information
 
 ## Email
-**srikanthschelbert@gmail.com**
+**grasnyder2001@gmail.com**
 
 ## Phone
-**(319) 631-9522**
+**(765) 650-0970**
 
 ## Linkedin
-[LinkedIn](https://www.linkedin.com/in/srikanth-schelbert/)
+[LinkedIn](https://www.linkedin.com/in/graysonsnyder/)
