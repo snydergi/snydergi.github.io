@@ -1,31 +1,7 @@
 ---
-layout: main
-title: Portfolio
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
 ---
-
-<main id="portfolio">
-	<h1 class="page-header">Portfolio</h1>
-	<section>
-		<div id="portfolio-gallery">
-			{% assign sorted_pages = site.projects | sort:"path" %}
-			{% for project in sorted_pages %}
-			<div class="container">
-				<div class="aspect-ratio-keeper"> </div>
-				<div class="content">
-					<a href="{{ site.baseurl }}{{ project.url }}">
-						<span class="link-spanner"></span>
-						<div class="image-container">
-							<div class="image-vertical-align-box" >
-								<img class="inner" src="{{ project.image }}">
-							</div>
-						</div>
-						<div class="inner-text">
-							<h2>{{ project.title }}</h2>
-						</div>
-					</a>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</section>
-</main>

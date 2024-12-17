@@ -1,19 +1,195 @@
-# Site settings
-title:              Grayson Snyder
-email:              grasnyder2001@gmail.com
-description:        "Portfolio template for students in the MSR program at Northwestern University"
-url:                "http://localhost:4000"
-baseurl:            ''
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# File structure settings
-image_path:         /public/images
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Srikanth Schelbert
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  M.S. in Robotics Student
+twitter_username: username
+github_username: Schelbert197
+minimal_mistakes_skin: 'mint' #dark # default
+search: true
 
 # Build settings
-markdown:           kramdown
-permalink:          pretty
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Collection definitions and settings
+include:
+  - _pages
+  - _test_items
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Srikanth Schelbert"
+  avatar : "/assets/images/bio-photo1.png"
+  bio    : "MS in Robotics @ Northwestern"
+  links:
+    - label: "Evanston, IL"
+      icon: "fas fa-fw fa-map-marker-alt"
+      url: ""
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Schelbert197"
+    - label: "Email"
+      icon: "fa fa-fw fa-envelope"
+      url: "mailto:srikanthschelbert2024@u.northwestern.edu"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/srikanth-schelbert/"
+    
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Schelbert197"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      mathjax: false # Set default to false unless needed
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      mathjax: false # Set default to false unless needed
+  - scope:
+      path: ""
+      type: portfolio_featured
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      mathjax: false # Set default to false unless needed
+  - scope:
+      path: ""
+      type: portfolio_perception_nav
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: ""
+      type: portfolio_sim
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: ""
+      type: portfolio_mechatronics
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: ""
+      type: portfolio_web
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: ""
+      type: portfolio_other
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: ""
+      type: test_items
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
 collections:
-  projects:
+  portfolio:
     output: true
-    permalink: /projects/:path/
+    permalink: /:collection/:path/
+  portfolio_featured:
+    output: true
+    permalink: /:collection/:path/
+  portfolio_perception_nav:
+    output: true
+    permalink: /:collection/:path/
+  portfolio_sim:
+    output: true
+    permalink: /:collection/:path/
+  portfolio_mechatronics:
+    output: true
+    permalink: /:collection/:path/
+  portfolio_web:
+    output: true
+    permalink: /:collection/:path/
+  portfolio_other:
+    output: true
+    permalink: /:collection/:path/
+  test_items:
+    output: true
+    permalink: /:collection/:path/
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
