@@ -9,7 +9,7 @@ header:
 classes: wide
 ---
 ## Featured Video
-<iframe width="560" height="315" src="/assets/images/projectImages/toastImages/toastDemo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="/assets/images/projectImages/toastImages/toastDemo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
 ## Project Objective
 The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate.
