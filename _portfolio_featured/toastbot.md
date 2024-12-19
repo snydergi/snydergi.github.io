@@ -5,11 +5,11 @@ key: 1
 toc: true
 excerpt: "ROS2, MoveIt, RealSense"
 header:
-  teaser: /assets/images/projectImages/toastImages/toast.jpg
+  teaser: /assets/images/projectImages/toastImages/toastTeaser.gif
 classes: wide
 ---
 ## Featured Video
-<!-- <iframe width="560" height="315" src="/assets/images/projectImages/toastImages/toastDemo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<iframe width="560" height="315" src="https://youtu.be/XGcdhWRo-iU?si=x-tIp6RNKJ3DHadP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Project Objective
 The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate.
