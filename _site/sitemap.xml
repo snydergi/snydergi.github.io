@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/portfolio_featured/swarmProposal/</loc>
-<lastmod>2024-12-19T14:13:35-06:00</lastmod>
+<lastmod>2025-01-13T21:34:29-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/portfolio_featured/toastbot/</loc>
-<lastmod>2024-12-19T14:13:35-06:00</lastmod>
+<lastmod>2025-01-13T21:34:29-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/portfolio_featured/undergradResearch/</loc>
-<lastmod>2024-12-19T14:13:35-06:00</lastmod>
+<lastmod>2025-01-13T21:34:29-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
@@ -37,8 +37,8 @@
 <loc>http://localhost:4000/_pages/contact/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/images/misc/resume.pdf</loc>
-<lastmod>2024-12-17T14:55:47-06:00</lastmod>
+<loc>http://localhost:4000/assets/images/misc/SnyderGraysonResume.pdf</loc>
+<lastmod>2025-01-13T21:33:52-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/projectImages/swarmProp/swarmProposal.pdf</loc>

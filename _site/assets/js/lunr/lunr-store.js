@@ -1,5 +1,5 @@
 var store = [{
-        "title": "Proposal - Development of Blended Swarm Communication Methods",
+        "title": "Development of Blended Swarm Communication Methods",
         "excerpt":"  ","categories": [],
         "tags": [],
         "url": "/portfolio_featured/swarmProposal/",
@@ -12,8 +12,8 @@ var store = [{
         "teaser": "/assets/images/projectImages/toastImages/toastTeaser.gif"
       },{
         "title": "Low-Cost Position-Controllable Planar Arm",
-        "excerpt":"Poster Overview The goal of this project is to develop a two degree-of-freedom (DOF) planar robot arm that is consistent, robust, easily reproducible, and particularly, inexpensive, for use in ME 445, Robot Dynamics and Control, for in-class demonstrations, labs, and homework. A 2-DOF robot arm would be useful for application...","categories": [],
+        "excerpt":"Poster Overview The goal of this project was to develop a two degree-of-freedom (DOF) planar robot arm that is consistent, robust, easily reproducible, and particularly, inexpensive, for use in ME 445, Robot Dynamics and Control, for in-class demonstrations, labs, and homework. A 2-DOF robot arm would be useful for application...","categories": [],
         "tags": [],
         "url": "/portfolio_featured/undergradResearch/",
-        "teaser": "/assets/images/projectImages/undergradResearch/undergradResearchPoster.jpg"
+        "teaser": "/assets/images/projectImages/undergradResearch/2DOFCapstanDriveCAD.png"
       },]
