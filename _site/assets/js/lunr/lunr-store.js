@@ -17,9 +17,9 @@ var store = [{
         "url": "/portfolio_featured/undergradResearch/",
         "teaser": "/assets/images/projectImages/undergradResearch/2DOFCapstanDriveCAD.png"
       },{
-        "title": "Recipe Book Website",
-        "excerpt":"TODO  ","categories": [],
+        "title": "Recipe Website",
+        "excerpt":"Try the website yourself! Click Here! Collaborators This project was done in collaboration with the Liana Tutt (https://github.com/tuttlr) for CSSE280: Intro to Web Development at Rose-Hulman Institute of Technology. Project Description This website allows for users to get recipes from countries around the world at the click of a button...","categories": [],
         "tags": [],
         "url": "/portfolio_other/recipeRoulette/",
-        "teaser": "/assets/images/projectImages/swarmProp/swarmImage.jpg"
+        "teaser": "/assets/images/projectImages/recipeRoulette/globeSpin.gif"
       },]

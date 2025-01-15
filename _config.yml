@@ -146,13 +146,13 @@ defaults:
   #     layout: single
   #     author_profile: false
   #     share: true
-  # - scope:
-  #     path: ""
-  #     type: portfolio_other
-  #   values:
-  #     layout: single
-  #     author_profile: false
-  #     share: true
+  - scope:
+      path: ""
+      type: portfolio_other
+    values:
+      layout: single
+      author_profile: false
+      share: true
   # - scope:
   #     path: ""
   #     type: test_items
