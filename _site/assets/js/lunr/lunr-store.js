@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Rolling and Jumping Orb Drone",
+        "excerpt":"Project Objective The goal of this project is to create a rolling and jumping orb drone (RAJOD), similar to robots such as Sphero, BB-8, or Droneball. This project aims to create a robot with the advantageous qualities of both a quadrotor and a wheeled robot, with the ability to roll,...","categories": [],
+        "tags": [],
+        "url": "/portfolio_featured/rajod/",
+        "teaser": "/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg"
+      },{
         "title": "Development of Blended Swarm Communication Methods",
         "excerpt":"  ","categories": [],
         "tags": [],

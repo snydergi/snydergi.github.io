@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>7-DOF Food Preparation - Grayson Snyder</title>
-<meta name="description" content="ROS2, MoveIt, RealSense">
+<!-- begin _includes/seo.html --><title>Rolling and Jumping Orb Drone - Grayson Snyder</title>
+<meta name="description" content="M.S. in Robotics Student">
 
 
   <meta name="author" content="Grayson Snyder">
@@ -22,15 +22,15 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Grayson Snyder">
-<meta property="og:title" content="7-DOF Food Preparation">
-<meta property="og:url" content="http://localhost:4000/portfolio_featured/toastbot/">
+<meta property="og:title" content="Rolling and Jumping Orb Drone">
+<meta property="og:url" content="http://localhost:4000/portfolio_featured/rajod/">
 
 
-  <meta property="og:description" content="ROS2, MoveIt, RealSense">
+  <meta property="og:description" content="M.S. in Robotics Student">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/projectImages/toastImages/toastTeaser.gif">
+  <meta property="og:image" content="http://localhost:4000/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg">
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/portfolio_featured/toastbot/">
+<link rel="canonical" href="http://localhost:4000/portfolio_featured/rajod/">
 
 
 
@@ -269,7 +269,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a></li><li><a href="#project-objective">Project Objective</a><ul><li><a href="#collaborators">Collaborators</a></li></ul></li><li><a href="#outline">Outline</a><ul><li><a href="#moveit-api">MoveIt API</a></li><li><a href="#workspace-planning">Workspace Planning</a></li><li><a href="#computer-vision">Computer Vision</a></li><li><a href="#multi-threaded-executor">Multi-Threaded Executor</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
+              <ul class="toc__menu"><li><a href="#project-objective">Project Objective</a></li><li><a href="#outline">Outline</a><ul><li><a href="#goals">Goals</a></li><li><a href="#tasks">Tasks</a></li><li><a href="#risks-challenges-and-uncertainties">Risks, Challenges, and Uncertainties</a></li><li><a href="#anticipated-necessities-and-references">Anticipated Necessities and References</a><ul><li><a href="#hardware">Hardware</a></li><li><a href="#software">Software</a></li><li><a href="#reference-material">Reference Material</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -279,8 +279,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="7-DOF Food Preparation">
-    <meta itemprop="description" content="ROS2, MoveIt, RealSense">
+    <meta itemprop="headline" content="Rolling and Jumping Orb Drone">
+    <meta itemprop="description" content="">
     
     
 
@@ -288,7 +288,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/portfolio_featured/toastbot/" class="u-url" itemprop="url">7-DOF Food Preparation
+            <a href="http://localhost:4000/portfolio_featured/rajod/" class="u-url" itemprop="url">Rolling and Jumping Orb Drone
 </a>
           </h1>
           
@@ -299,55 +299,85 @@
 
       <section class="page__content e-content" itemprop="text">
         <!-- Moved TOC to sidebar.html -->
-        <h2 id="featured-video">Featured Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XGcdhWRo-iU?si=2WTV-TyIyLdX8AVo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        <p><img src="/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg" width="400" /></p>
 
 <h2 id="project-objective">Project Objective</h2>
-<p>The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate.</p>
-
-<h3 id="collaborators">Collaborators</h3>
-
-<p>This project was done in collaboration with the following students:</p>
-
-<ul>
-  <li>Sharwin Patil (<a href="https://github.com/Sharwin24">https://github.com/Sharwin24</a>)</li>
-  <li>Asa Rogers (<a href="https://github.com/asarogers">https://github.com/asarogers</a>)</li>
-  <li>Tony Shilati (<a href="https://github.com/tony-shilati">https://github.com/tony-shilati</a>)</li>
-</ul>
+<p>The goal of this project is to create a rolling and jumping orb drone (RAJOD), similar to robots such as
+Sphero, BB-8, or Droneball. This project aims to create a robot with the advantageous
+qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and po-
+tentially hover briefly if necessary to explore its environment. Where traditional spher-
+ical robots are limited to planar surfaces, this will be capable of many terrains. Where
+quadrotors typically have minimal flight time, having the robot ground-based will allow
+for larger battery capacity and active time.</p>
 
 <h2 id="outline">Outline</h2>
 
-<h3 id="moveit-api">MoveIt API</h3>
+<h3 id="goals">Goals</h3>
+<p>The goals of this project are outlined in three sections: Fallback, Core, and Reach.</p>
 
-<p>Prior to the start of the ToastBot project, the group developed an API to to simply interface new ROS2 nodes with the Emika Franka Panda robot’s MoveIt package. The API consists of three main subcomponents: RobotState, ScenePlanner, and MotionPlanner. The three are abstracted within the MotionPlanningInterface, which can be imported into ROS2 nodes to make motion requests of the robot arm.</p>
+<p>The fallback goal of this project is to be able to move successfully in an ideal environ-
+ment, a smooth flat floor. Accomplishing this is the first step toward improving the robot
+to be able to navigate uneven surfaces and jump.</p>
 
-<details>
-<summary><b>Subcomponent Breakdown</b></summary>
-<br />
-<p>The ScenePlanner component can be used to update the move group planning scene. It allows users to add and remove boxes, attach and detach collision objects from the end effector, and load multiple collision objects at once. It is capable of adding objects of different shapes and dimensions as specified by the user for each function. Use of the ScenePlanner is critical particularly in instances where the robot is grasping a solid object and must plan paths around obstacles, accounting for said object in its grasp.</p>
+<p>The core goal of this project is to produce a robot capable of navigating uneven surfaces, with the ability to jump at least one foot vertically, allowing for climbing stairs or
+over debris.</p>
 
-<p>The RobotState component performs forward and inverse kinematic caluclations for the Emika Franka Panda robot arm for use in determining current or desired poses, or the angles required to achieve them.</p>
+<p>The reach goal of this project is to add a camera to allow remote control from a position
+where the robot is not visible. This would also ultimately create capability for limited
+SLAM applications.</p>
 
-<p>The MotionPlanner component contains the bulk of the API's functionality. It provides utilities to plan, execute, and manage robot trajectories using joint configurations, Cartesian paths, and predefined named configurations. Additionally, it allows for control of the robot end-effector. The MotionPlanner serves as a ROS2 Action Client to he MoveGroup node running on the robot arm.</p>
+<h3 id="tasks">Tasks</h3>
+<p>For goal oriented work to be accomplished, the project has been divided into anticipated tasks in an approximate timeline following the Northwestern 10-week schedule.</p>
+<ol>
+  <li>Design gyroscope (Week 1)</li>
+  <li>Build cage and robot exterior (Week 2)</li>
+  <li>Assemble full robot (Week 3)</li>
+  <li>Tune Crazyflie to only roll, develop software (Week 4-6)</li>
+  <li>Create jumping functionality (Week 7)</li>
+  <li>Test longevity, exploration capabilities, and perform benchmarking (Week 8)</li>
+  <li>Add camera hardware and software (Week 9-10)</li>
+</ol>
 
-<p>The key components of the API used in the ToastBot project are the RobotState and MotionPlanner.</p>
+<h3 id="risks-challenges-and-uncertainties">Risks, Challenges, and Uncertainties</h3>
+<p>I see the highest risk of failure for this project being the structure surrounding the in-
+ternal quadrotor. Creating a wire mesh sphere that is robust enough to provide structure
+but not overdone to the point of weighing down the robot and preventing motion will
+be difficult to achieve. In addition, the design and creation, as well as balancing, of the
+quadrotor on the internal gyroscope will prove challenging.
+The parts of the project I am least sure on how to approach is the software aspects. I
+have little experience with quadrotors and the controls that go into them, so I will need to
+do more research to understand how to alter its performance to get the proper thrust and
+mobility I want from the robot. I plan on addressing this potential issue and uncertainty
+through experimentation with the quadrotor, and examination of the current library.</p>
 
-</details>
+<h3 id="anticipated-necessities-and-references">Anticipated Necessities and References</h3>
+<h4 id="hardware">Hardware</h4>
+<ul>
+  <li>1 Crazyflie 2.1+ (https://store.bitcraze.io/products/crazyflie-2-1-plus)</li>
+  <li>1 Crazyradio 2.0 (https://store.bitcraze.io/products/crazyradio-2-0)</li>
+  <li>1 XBox USB Controller</li>
+  <li>Wire for spherical shell</li>
+  <li>Raspberry Pi Zero-W (https://a.co/d/8pbOcCn)</li>
+  <li>Raspberry Pi Standard Camera (https://a.co/d/hpUwEWQ)</li>
+  <li>Raspberry Pi 160 FOV Camera (if standard camera not adequate) (https://a.co/d/5NxLklM)</li>
+</ul>
 
-<h3 id="workspace-planning">Workspace Planning</h3>
+<h4 id="software">Software</h4>
+<p>Because this is a hardware-oriented project, with the goal being the creation and fabri-
+cation of the robot, I will be using as much software that is pre-made as possible, though
+it is likely that some custom functions and libraries will be written.</p>
+<ul>
+  <li>Crazyflie Python Library (https://github.com/bitcraze/crazyflie-lib-python)</li>
+  <li>Pycamera Python Library (https://picamera.readthedocs.io/en/release-1.13/)</li>
+</ul>
 
-<p>With limited workspace, designing and arranging the components of the task was an important consideration. To aid in this, we created many 3d-printed fixtures including a bread holder, toaster lever extension, plate, brush holder, and butter dish holder. Each model was designed to have a slot for an April Tag such that offsets to points of interest on the model would be quick to determine. In early stages of the project, a virtual recreation of the scene using the MoveItAPI ScenePlanner was considered, but due to the reliability of the April Tag positioning and the desired poses, collisions were not of major concern and it was ultimately unused.</p>
-
-<h3 id="computer-vision">Computer Vision</h3>
-
-<p>Vision was a key aspect to the success of this project. We used an Intel RealSense D435i camera mounted outside the workspace of the arm on a tripod to capture the entire scene. With the camera in place, we used April Tags to create transforms between each object in the scene and the robot.</p>
-
-<h3 id="multi-threaded-executor">Multi-Threaded Executor</h3>
-
-<p>The multi-threaded executor was the last piece of the project needed to tie everything together. The toasting process was initiated using a ROS2 service call, but after the lever was pressed we needed a reliable method to detect when the toaster popped and the process could continue. To accomplish this, first a node was created that published the April Tag transform updates, with subscribers in the main node to listen to each topic so that the transforms would continue to be updated regardless of the main nodes processes. Then, we created a state machine in the node to watch for when the transform of the lever April Tag changed from its lowered position back to the original position, indicating that the toast popped. With this, the executor then takes over calling the remaining asynchronous functions required to lift the toast from the toaster and place it on the plate. Without the executor, the code began ‘hanging’ during the process.</p>
-
-<h2 id="source-code">Source code</h2>
-<p><a href="https://github.com/snydergi/ToastBot">Github Repository</a></p>
+<h4 id="reference-material">Reference Material</h4>
+<ul>
+  <li>Pi Camera with Crazyflie (https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/)</li>
+  <li>Droneball Inspiration (https://imazetech.com/)</li>
+  <li>Gyroscope Inspiration (https://www.thingiverse.com/thing:802145)</li>
+  <li>Spherical Robot Literature Review (https://doi.org/10.1016/j.robot.2024.104657)</li>
+</ul>
 
         
       </section>
@@ -364,22 +394,21 @@
       <section class="page__share">
   
 
-  <!-- <a href="https://twitter.com/intent/tweet?text=7-DOF+Food+Preparation%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Ftoastbot%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <!-- <a href="https://twitter.com/intent/tweet?text=Rolling+and+Jumping+Orb+Drone%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Frajod%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Ftoastbot%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Frajod%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Ftoastbot%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Frajod%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
       <a href="/portfolio_featured/swarmProposal/" class="pagination--pager" title="Development of Blended Swarm Communication Methods
-">Previous</a>
-    
-    
-      <a href="/portfolio_featured/undergradResearch/" class="pagination--pager" title="Low-Cost Position-Controllable Planar Arm
 ">Next</a>
     
   </nav>
