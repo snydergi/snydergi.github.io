@@ -13,9 +13,7 @@ classes: wide
 ## Project Objective
 The goal of this project is to create a rolling and jumping orb drone (RAJOD), similar to robots such as
 Sphero, BB-8, or Droneball. This project aims to create a robot with the advantageous
-qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and po-
-tentially hover briefly if necessary to explore its environment. Where traditional spher-
-ical robots are limited to planar surfaces, this will be capable of many terrains. Where
+qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and potentially hover briefly if necessary to explore its environment. Where traditional spherical robots are limited to planar surfaces, this will be capable of many terrains. Where
 quadrotors typically have minimal flight time, having the robot ground-based will allow
 for larger battery capacity and active time.
 
@@ -24,8 +22,7 @@ for larger battery capacity and active time.
 ### Goals
 The goals of this project are outlined in three sections: Fallback, Core, and Reach.
 
-The fallback goal of this project is to be able to move successfully in an ideal environ-
-ment, a smooth flat floor. Accomplishing this is the first step toward improving the robot
+The fallback goal of this project is to be able to move successfully in an ideal environment, a smooth flat floor. Accomplishing this is the first step toward improving the robot
 to be able to navigate uneven surfaces and jump.
 
 The core goal of this project is to produce a robot capable of navigating uneven surfaces, with the ability to jump at least one foot vertically, allowing for climbing stairs or
@@ -46,8 +43,7 @@ For goal oriented work to be accomplished, the project has been divided into ant
 7. Add camera hardware and software (Week 9-10)
 
 ### Risks, Challenges, and Uncertainties
-I see the highest risk of failure for this project being the structure surrounding the in-
-ternal quadrotor. Creating a wire mesh sphere that is robust enough to provide structure
+I see the highest risk of failure for this project being the structure surrounding the internal quadrotor. Creating a wire mesh sphere that is robust enough to provide structure
 but not overdone to the point of weighing down the robot and preventing motion will
 be difficult to achieve. In addition, the design and creation, as well as balancing, of the
 quadrotor on the internal gyroscope will prove challenging.
@@ -68,8 +64,7 @@ through experimentation with the quadrotor, and examination of the current libra
 - Raspberry Pi 160 FOV Camera (if standard camera not adequate) (https://a.co/d/5NxLklM)
 
 #### Software
-Because this is a hardware-oriented project, with the goal being the creation and fabri-
-cation of the robot, I will be using as much software that is pre-made as possible, though
+Because this is a hardware-oriented project, with the goal being the creation and fabrication of the robot, I will be using as much software that is pre-made as possible, though
 it is likely that some custom functions and libraries will be written.
 - Crazyflie Python Library (https://github.com/bitcraze/crazyflie-lib-python)
 - Pycamera Python Library (https://picamera.readthedocs.io/en/release-1.13/)
