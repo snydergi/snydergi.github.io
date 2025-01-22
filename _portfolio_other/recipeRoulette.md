@@ -10,7 +10,8 @@ classes: wide
 ---
 
 ![Website Homepage](/assets/images/projectImages/recipeRoulette/grrHomepage.png)
-## Try the website yourself! [Click Here!](https://global-recipe-roulette.web.app/home.html)
+
+## Try the website yourself! <a href="https://global-recipe-roulette.web.app/home.html" target="_blank">Click Here!</a>
 
 ### Collaborators
 
