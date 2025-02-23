@@ -1,15 +1,15 @@
 var store = [{
+        "title": "Deployable Vehicle Solar Array",
+        "excerpt":"Sponsor The project was sponsored by and done for Intelligent Systems (https://www.isehome.com/). For project inquiries, contact Stephe Blansette (stephe@isehome.com) Featured Video Project Overview For Mechanical Engineering at Rose-Hulman Institute of Technology, a Capstone Project, typically for an external client, is created as an opportunity to apply the past four years...","categories": [],
+        "tags": [],
+        "url": "/portfolio_featured/capstone/",
+        "teaser": "/assets/images/projectImages/capstone/capstone.gif"
+      },{
         "title": "Rolling and Jumping Orb Drone",
         "excerpt":"Project Objective The goal of this project is to create a rolling and jumping orb drone (RAJOD), similar to robots such as Sphero, BB-8, or Droneball. This project aims to create a robot with the advantageous qualities of both a quadrotor and a wheeled robot, with the ability to roll,...","categories": [],
         "tags": [],
         "url": "/portfolio_featured/rajod/",
         "teaser": "/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg"
-      },{
-        "title": "Development of Blended Swarm Communication Methods",
-        "excerpt":"  ","categories": [],
-        "tags": [],
-        "url": "/portfolio_featured/swarmProposal/",
-        "teaser": "/assets/images/projectImages/swarmProp/swarmImage.jpg"
       },{
         "title": "7-DOF Food Preparation",
         "excerpt":"Featured Video Project Objective The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate. Collaborators This project was done...","categories": [],
@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "/portfolio_other/recipeRoulette/",
         "teaser": "/assets/images/projectImages/recipeRoulette/globeSpin.gif"
+      },{
+        "title": "Development of Blended Swarm Communication Methods",
+        "excerpt":"  ","categories": [],
+        "tags": [],
+        "url": "/portfolio_other/swarmProposal/",
+        "teaser": "/assets/images/projectImages/swarmProp/swarmImage.jpg"
       },]
