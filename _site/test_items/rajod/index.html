@@ -1,0 +1,74 @@
+<p><img src="/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg" width="400" /></p>
+
+<h2 id="project-objective">Project Objective</h2>
+<p>The goal of this project is to create a rolling and jumping orb drone (RAJOD), similar to robots such as
+Sphero, BB-8, or Droneball. This project aims to create a robot with the advantageous
+qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and potentially hover briefly if necessary to explore its environment. Where traditional spherical robots are limited to planar surfaces, this will be capable of many terrains. Where
+quadrotors typically have minimal flight time, having the robot ground-based will allow
+for larger battery capacity and active time.</p>
+
+<h2 id="outline">Outline</h2>
+
+<h3 id="goals">Goals</h3>
+<p>The goals of this project are outlined in three sections: Fallback, Core, and Reach.</p>
+
+<p>The fallback goal of this project is to be able to move successfully in an ideal environment, a smooth flat floor. Accomplishing this is the first step toward improving the robot
+to be able to navigate uneven surfaces and jump.</p>
+
+<p>The core goal of this project is to produce a robot capable of navigating uneven surfaces, with the ability to jump at least one foot vertically, allowing for climbing stairs or
+over debris.</p>
+
+<p>The reach goal of this project is to add a camera to allow remote control from a position
+where the robot is not visible. This would also ultimately create capability for limited
+SLAM applications.</p>
+
+<h3 id="tasks">Tasks</h3>
+<p>For goal oriented work to be accomplished, the project has been divided into anticipated tasks in an approximate timeline following the Northwestern 10-week schedule.</p>
+<ol>
+  <li>Design gyroscope (Week 1)</li>
+  <li>Build cage and robot exterior (Week 2)</li>
+  <li>Assemble full robot (Week 3)</li>
+  <li>Tune Crazyflie to only roll, develop software (Week 4-6)</li>
+  <li>Create jumping functionality (Week 7)</li>
+  <li>Test longevity, exploration capabilities, and perform benchmarking (Week 8)</li>
+  <li>Add camera hardware and software (Week 9-10)</li>
+</ol>
+
+<h3 id="risks-challenges-and-uncertainties">Risks, Challenges, and Uncertainties</h3>
+<p>I see the highest risk of failure for this project being the structure surrounding the internal quadrotor. Creating a wire mesh sphere that is robust enough to provide structure
+but not overdone to the point of weighing down the robot and preventing motion will
+be difficult to achieve. In addition, the design and creation, as well as balancing, of the
+quadrotor on the internal gyroscope will prove challenging.
+The parts of the project I am least sure on how to approach is the software aspects. I
+have little experience with quadrotors and the controls that go into them, so I will need to
+do more research to understand how to alter its performance to get the proper thrust and
+mobility I want from the robot. I plan on addressing this potential issue and uncertainty
+through experimentation with the quadrotor, and examination of the current library.</p>
+
+<h3 id="anticipated-necessities-and-references">Anticipated Necessities and References</h3>
+<h4 id="hardware">Hardware</h4>
+<ul>
+  <li>1 Crazyflie 2.1+ (https://store.bitcraze.io/products/crazyflie-2-1-plus)</li>
+  <li>1 Crazyradio 2.0 (https://store.bitcraze.io/products/crazyradio-2-0)</li>
+  <li>1 XBox USB Controller</li>
+  <li>Wire for spherical shell</li>
+  <li>Raspberry Pi Zero-W (https://a.co/d/8pbOcCn)</li>
+  <li>Raspberry Pi Standard Camera (https://a.co/d/hpUwEWQ)</li>
+  <li>Raspberry Pi 160 FOV Camera (if standard camera not adequate) (https://a.co/d/5NxLklM)</li>
+</ul>
+
+<h4 id="software">Software</h4>
+<p>Because this is a hardware-oriented project, with the goal being the creation and fabrication of the robot, I will be using as much software that is pre-made as possible, though
+it is likely that some custom functions and libraries will be written.</p>
+<ul>
+  <li>Crazyflie Python Library (https://github.com/bitcraze/crazyflie-lib-python)</li>
+  <li>Pycamera Python Library (https://picamera.readthedocs.io/en/release-1.13/)</li>
+</ul>
+
+<h4 id="reference-material">Reference Material</h4>
+<ul>
+  <li>Pi Camera with Crazyflie (https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/)</li>
+  <li>Droneball Inspiration (https://imazetech.com/)</li>
+  <li>Gyroscope Inspiration (https://www.thingiverse.com/thing:802145)</li>
+  <li>Spherical Robot Literature Review (https://doi.org/10.1016/j.robot.2024.104657)</li>
+</ul>
