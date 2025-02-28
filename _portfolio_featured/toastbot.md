@@ -5,7 +5,7 @@ key: 1
 toc: true
 excerpt: "ROS2, MoveIt, RealSense"
 header:
-  teaser: /assets/images/projectImages/toastImages/toastTeaser.gif
+  teaser: /assets/images/projectImages/toastImages/toast_grab.gif
 classes: wide
 ---
 ## Featured Video
