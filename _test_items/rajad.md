@@ -1,5 +1,5 @@
 ---
-title: "Rolling and Jumping Orb Drone"
+title: "Rolling and Jumping Automonous Drone"
 author_profile: true
 key: 4
 toc: true
@@ -11,11 +11,12 @@ classes: wide
 <img src="/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg" width="400">
 
 ## Project Objective
-The goal of this project is to create a rolling and jumping orb drone (RAJOD), similar to robots such as
-Sphero, BB-8, or Droneball. This project aims to create a robot with the advantageous
-qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and potentially hover briefly if necessary to explore its environment. Where traditional spherical robots are limited to planar surfaces, this will be capable of many terrains. Where
-quadrotors typically have minimal flight time, having the robot ground-based will allow
-for larger battery capacity and active time.
+The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the 
+simplicity of a wheeled robot. This project aims to create a robot with the advantageous
+qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and hover briefly if necessary to explore its environment. 
+Where traditional wheeled robots are limited to the ground plane, this robot is capable of additional actuation to allow for vertical travel. 
+Where quadrotors typically are limited in flight time due to power consumption and battery weight capacity, having the robot ground-based will allow
+for improved battery capacity and active time by reducing propellor output substantially.
 
 ## Outline
 
