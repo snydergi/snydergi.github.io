@@ -33,5 +33,5 @@ var store = [{
         "excerpt":"Project Objective The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the simplicity of a wheeled robot. This project aims to create a robot with the advantageous qualities of both a quadrotor and a...","categories": [],
         "tags": [],
         "url": "/test_items/rajad/",
-        "teaser": "/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg"
+        "teaser": "/assets/images/projectImages/rajad/stair_climb.gif"
       }]

@@ -3,12 +3,12 @@ title: "Rolling and Jumping Automonous Drone"
 author_profile: true
 key: 4
 toc: true
-excerpt: ""
+excerpt: "Sensing, CAD, Prototyping"
 header:
-  teaser: /assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg
+  teaser: /assets/images/projectImages/rajad/stair_climb.gif
 classes: wide
 ---
-<img src="/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg" width="400">
+<!-- <img src="/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg" width="400"> -->
 
 ## Project Objective
 The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the 
