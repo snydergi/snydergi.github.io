@@ -21,26 +21,89 @@ for improved battery capacity and active time by reducing propellor output subst
 ## Outline
 
 ### Goals
-The must-have goal of this project is to be able to move successfully in an ideal environment, a smooth flat floor.
+The must-have goal of this project is to be able to move successfully in an ideal environment: a smooth flat floor.
 Accomplishing this is the first step toward improving the robot to be able to navigate uneven surfaces and jump.
 
 The core goal of this project is to produce a robot capable of navigating uneven surfaces, with the ability to jump at least one foot vertically.
 This allows for climbing stairs or over debris to broaden applicability.
 
+### Development
+Throughout the development of this project, a key consideration was the overall mass of the robot. Due to their incredibly small form factor as a quadrotor, the standard Crazyflie 2.1+ has a relatively small payload capacity, at a recommended 15 grams. To improve this capacity, I utilized the Crazyflie Thrust Upgrade, which provided stronger DC motors and higher thrust propellers. The final thrust was measured by placing the robot on a scale and putting slightly more mass attached than it was expected to lift then operating the propellers at maximum thrust to collect data on the difference in measured mass before and after, with the difference being the maximum mass the thrust would be able to counteract. The absolute maximum mass is approximately 60 grams based on the experiment. 
+
+<div>
+  <div style="display: inline-block; width: 48%; margin-right: 1%;">
+    <img src="/assets/images/projectImages/rajad/rajad_77pt3.png" alt="Mass with no thrust." style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      ~77.3g - No Thrust Applied
+    </p>
+  </div>
+  <div style="display: inline-block; width: 48%; margin-left: 1%;">
+    <img src="/assets/images/projectImages/rajad/rajad_16pt8.png" alt="Mass with thrust" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      ~16.8g - Thrust Applied
+    </p>
+  </div>
+</div>
+
+The final iteration of the custom fabricated parts combined with the quadrotor achieves a sum mass of ~55 grams, making it within the necessary requirement for liftoff. The assembly structure around the Crazyflie consists of a hub and two wheels. The hub is designed to integrate directly into the Crazyflie's structure. The hub is stabilized by wrapping around the two sets of header pins then connecting across the center. Threaded heat inserts on the left and right of the quadrotor also allow for screws to connect while using O-Rings as flexible spacers through two holes that already exist on the PCB of the Crazyflie. The arms that stick out from the hub then have space for two ball bearings to be inserted on each side via heating the bearing and fusing it into the 3D printing space that is slightly undersized for it. The use of two bearings per shaft helps ensure axial allignment between the two wheels.
+
+<div>
+  <div style="display: inline-block; width: 48%; margin-right: 2%;">
+    <img src="/assets/images/projectImages/rajad/isoViewCAD.png" alt="Isometric View in CAD" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      Isometric View in CAD
+    </p>
+  </div>
+  <div style="display: inline-block; width: 48%;">
+    <img src="/assets/images/projectImages/rajad/final_weight.jpg" alt="Total Mass of Robot" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      Total Mass of Robot
+    </p>
+  </div>
+</div>
+
+<div>
+  <div style="display: inline-block; width: 48%; margin-right: 2%;">
+    <img src="/assets/images/projectImages/rajad/mounting_top.jpeg" alt="Top View of Mount" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      Top View of Mount
+    </p>
+  </div>
+  <div style="display: inline-block; width: 48%;">
+    <img src="/assets/images/projectImages/rajad/mounting_bottom.jpeg" alt="Bottom View of Mount" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      Bottom View of Mount
+    </p>
+  </div>
+</div>
+
 ### Resources and References
 #### Hardware
 The hardware for this project is a mix of off-the-shelf components and custom designed hardware to combine components.
-- 1 Crazyflie 2.1+ (https://store.bitcraze.io/products/crazyflie-2-1-plus)
-- 1 Crazyradio 2.0 (https://store.bitcraze.io/products/crazyradio-2-0)
-- 1 Crazyflie Flow Deck V2 (https://www.bitcraze.io/products/flow-deck-v2/)
-- 1 Crazyflie Multi-Ranger Deck (https://www.bitcraze.io/products/multi-ranger-deck/)
-- 4 2mm Ball Bearings
-- 2 2mm Shafts
-- 2 2mm Shaft Collars
-- 1 XBox USB Controller
-- 1 3D Printed Hub
-- 2 3D Printed Wheels
-- 1 Laptop
+<div style="display: flex;">
+  <div style="flex: 1;">
+    <ul>
+      <li>1 <a href="https://store.bitcraze.io/products/crazyflie-2-1-plus">Crazyflie 2.1+</a></li>
+      <li>1 <a href="https://store.bitcraze.io/products/crazyradio-2-0">Crazyradio 2.0</a></li>
+      <li>1 <a href="https://www.bitcraze.io/products/flow-deck-v2/">Crazyflie Flow Deck V2</a></li>
+      <li>1 <a href="https://www.bitcraze.io/products/multi-ranger-deck/">Crazyflie Multi-Ranger Deck</a></li>
+      <li>1 <a href="https://store.bitcraze.io/products/thrust-upgrade-bundle-for-crazyflie-2-x">Thrust Upgrade Bundle</a></li>
+      <li>4 <a href="https://www.mcmaster.com/57155K416/">2mm Ball Bearings</a></li>
+      <li>2 <a href="https://www.mcmaster.com/1265K17/">2mm Shafts</a></li>
+    </ul>
+  </div>
+  <div style="flex: 1;">
+    <ul>
+      <li>1 <a href="https://a.co/d/dDdpf5L">XBox USB Controller</a></li>
+      <li>2 <a href="https://a.co/d/4i0yvj9">M2 Threaded Inserts</a></li>
+      <li>2 <a href="https://www.mcmaster.com/91292A833/">M2 Screws</a></li>
+      <li>2 <a href="https://www.mcmaster.com/9262K101/">2mm O-Rings</a></li>
+      <li>1 3D Printed Hub</li>
+      <li>2 3D Printed Wheels</li>
+      <li>1 Laptop</li>
+    </ul>
+  </div>
+</div>
 
 <!-- Add picture of full setup here -->
 
