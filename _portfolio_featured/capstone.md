@@ -1,7 +1,7 @@
 ---
 title: "Deployable Vehicle Solar Array"
 author_profile: true
-key: 3
+key: 4
 toc: true
 excerpt: "CAD, Prototyping, Testing"
 header:

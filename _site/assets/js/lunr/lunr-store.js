@@ -5,6 +5,12 @@ var store = [{
         "url": "/portfolio_featured/capstone/",
         "teaser": "/assets/images/projectImages/capstone/capstone.gif"
       },{
+        "title": "Rolling and Jumping Automonous Drone",
+        "excerpt":"Project Objective The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the simplicity of a wheeled robot. This project aims to create a robot with the advantageous qualities of both a quadrotor and a...","categories": [],
+        "tags": [],
+        "url": "/portfolio_featured/rajad/",
+        "teaser": "/assets/images/projectImages/rajad/stair_climb.gif"
+      },{
         "title": "7-DOF Food Preparation",
         "excerpt":"Featured Video Project Objective The goal of this project, more simply referred to as ToastBot, was to use an Emika Franka Panda robot arm to pick up a piece of bread, put it in a toaster, start the toaster, and place it on a plate. Collaborators This project was done...","categories": [],
         "tags": [],
@@ -28,10 +34,4 @@ var store = [{
         "tags": [],
         "url": "/portfolio_other/swarmProposal/",
         "teaser": "/assets/images/projectImages/swarmProp/swarmImage.jpg"
-      },{
-        "title": "Rolling and Jumping Automonous Drone",
-        "excerpt":"Project Objective The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the simplicity of a wheeled robot. This project aims to create a robot with the advantageous qualities of both a quadrotor and a...","categories": [],
-        "tags": [],
-        "url": "/test_items/rajad/",
-        "teaser": "/assets/images/projectImages/rajad/stair_climb.gif"
-      }]
+      },]

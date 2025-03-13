@@ -1,7 +1,7 @@
 ---
 title: "Rolling and Jumping Automonous Drone"
 author_profile: true
-key: 4
+key: 2
 toc: true
 excerpt: "Sensing, CAD, Prototyping"
 header:
@@ -28,7 +28,11 @@ The core goal of this project is to produce a robot capable of navigating uneven
 This allows for climbing stairs or over debris to broaden applicability.
 
 ### Development
-Throughout the development of this project, a key consideration was the overall mass of the robot. Due to their incredibly small form factor as a quadrotor, the standard Crazyflie 2.1+ has a relatively small payload capacity, at a recommended 15 grams. To improve this capacity, I utilized the Crazyflie Thrust Upgrade, which provided stronger DC motors and higher thrust propellers. The final thrust was measured by placing the robot on a scale and putting slightly more mass attached than it was expected to lift then operating the propellers at maximum thrust to collect data on the difference in measured mass before and after, with the difference being the maximum mass the thrust would be able to counteract. The absolute maximum mass is approximately 60 grams based on the experiment. 
+Throughout the development of this project, a key consideration was the overall mass of the robot. Due to their incredibly small form factor as a quadrotor,
+the standard Crazyflie 2.1+ has a relatively small payload capacity, at a recommended 15 grams. To improve this capacity, I utilized the Crazyflie Thrust Upgrade,
+which provided stronger DC motors and higher thrust propellers. The final thrust was measured by placing the robot on a scale and putting slightly more mass attached
+than it was expected to lift then operating the propellers at maximum thrust to collect data on the difference in measured mass before and after, with the difference
+being the maximum mass the thrust would be able to counteract. The absolute maximum mass is approximately 60 grams based on the experiment. 
 
 <div>
   <div style="display: inline-block; width: 48%; margin-right: 1%;">
@@ -76,6 +80,9 @@ The final iteration of the custom fabricated parts combined with the quadrotor a
     </p>
   </div>
 </div>
+
+### Benchmarking
+To test the benefit of mixed modality locomotion, I performed a test to compare power consumption between the two movement methods. The robot began with a fresh, fully charged battery for each experiment. The robots were commanded to move forward and backward half a meter, one rolling, and one maintaing a hover height of 0.2 meters. The timer began as soon as the propellers began moving and stopped upon their halting when the battery discharged all power. The rolling movement method sustained motion for 468 seconds while the flying movement method sustained motion for just 117 seconds. This rudimentary test indicates that the rolling motion is four times as power efficient as flying.
 
 ### Resources and References
 #### Hardware

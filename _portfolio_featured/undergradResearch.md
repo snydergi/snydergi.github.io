@@ -1,7 +1,7 @@
 ---
 title: "Low-Cost Position-Controllable Planar Arm"
 author_profile: true
-key: 2
+key: 3
 toc: true
 excerpt: "CAD, Controls, Circuits"
 header:
