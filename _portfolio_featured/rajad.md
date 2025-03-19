@@ -8,7 +8,8 @@ header:
   teaser: /assets/images/projectImages/rajad/stair_climb.gif
 classes: wide
 ---
-<!-- <img src="/assets/images/projectImages/rajod/gyroscopeWithDrone.jpeg" width="400"> -->
+## Featured Video
+<iframe width="560" height="315" src="https://youtu.be/Cmba8ZEuzpo" title="Featured Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Project Objective
 The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the 
