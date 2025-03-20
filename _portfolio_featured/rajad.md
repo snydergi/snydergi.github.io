@@ -1,5 +1,5 @@
 ---
-title: "Rolling and Jumping Automonous Drone"
+title: "Hybrid Locomotion Robot"
 author_profile: true
 key: 2
 toc: true
@@ -9,10 +9,10 @@ header:
 classes: wide
 ---
 ## Featured Video
-<iframe width="560" height="315" src="https://youtu.be/Cmba8ZEuzpo" title="Featured Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/Cmba8ZEuzpo" title="NU_MSR_Winter_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Project Objective
-The goal of this project is to create a rolling and jumping autonomous drone (RAJAD) that would blend the abilities of a conventional drone with the 
+The goal of this project is to create hybrid locomotion robot that would blend the abilities of a conventional drone with the 
 simplicity of a wheeled robot. This project aims to create a robot with the advantageous
 qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and hover briefly if necessary to explore its environment. 
 Where traditional wheeled robots are limited to the ground plane, this robot is capable of additional actuation to allow for vertical travel. 
