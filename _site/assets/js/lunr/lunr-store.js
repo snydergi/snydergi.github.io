@@ -6,7 +6,7 @@ var store = [{
         "teaser": "/assets/images/projectImages/capstone/capstone.gif"
       },{
         "title": "Hybrid Locomotion Robot",
-        "excerpt":"Featured Video Project Objective The goal of this project is to create hybrid locomotion robot that would blend the abilities of a conventional drone with the simplicity of a wheeled robot. This project aims to create a robot with the advantageous qualities of both a quadrotor and a wheeled robot,...","categories": [],
+        "excerpt":"Featured Video Goals This project aims to create a robot with the advantageous qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and hover briefly if necessary to explore its environment. Where traditional wheeled robots are limited to the ground plane, this robot is...","categories": [],
         "tags": [],
         "url": "/portfolio_featured/rajad/",
         "teaser": "/assets/images/projectImages/rajad/stair_climb.gif"

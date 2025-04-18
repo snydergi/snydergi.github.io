@@ -11,24 +11,20 @@ classes: wide
 ## Featured Video
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/Cmba8ZEuzpo" title="NU_MSR_Winter_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Project Objective
-The goal of this project is to create hybrid locomotion robot that would blend the abilities of a conventional drone with the 
-simplicity of a wheeled robot. This project aims to create a robot with the advantageous
+## Goals
+This project aims to create a robot with the advantageous
 qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and hover briefly if necessary to explore its environment. 
 Where traditional wheeled robots are limited to the ground plane, this robot is capable of additional actuation to allow for vertical travel. 
-Where quadrotors typically are limited in flight time due to power consumption and battery weight capacity, having the robot ground-based allows
+Where quadrotors typically are constrained by flight time due to power consumption and battery weight capacity, having the robot ground-based allows
 for improved battery capacity and active time by reducing propellor output substantially.
 
-## Outline
-
-### Goals
 The must-have goal of this project is to be able to move successfully in an ideal environment: a smooth flat floor.
 Accomplishing this is the first step toward improving the robot to be able to navigate uneven surfaces and jump.
 
 The core goal of this project is to produce a robot capable of navigating uneven surfaces, with the ability to jump at least one foot vertically.
 This allows for climbing stairs or over debris to broaden applicability.
 
-### Development
+## Mechanical Development
 Throughout the development of this project, a key consideration was the overall mass of the robot. Due to their incredibly small form factor as a quadrotor,
 the standard Crazyflie 2.1+ has a relatively small payload capacity, at a recommended 15 grams. To improve this capacity, I utilized the Crazyflie Thrust Upgrade,
 which provided stronger DC motors and higher thrust propellers. The final thrust was measured by placing the robot on a scale and putting slightly more mass attached
@@ -82,11 +78,21 @@ The final iteration of the custom fabricated parts combined with the quadrotor a
   </div>
 </div>
 
-### Benchmarking
-To test the benefit of mixed modality locomotion, I performed a test to compare power consumption between the two movement methods. The robot began with a fresh, fully charged battery for each experiment. The robots were commanded to move forward and backward half a meter, one rolling, and one maintaing a hover height of 0.2 meters. The timer began as soon as the propellers began moving and stopped upon their halting when the battery discharged all power. The rolling movement method sustained motion for 468 seconds while the flying movement method sustained motion for just 117 seconds. This rudimentary test indicates that the rolling motion is four times as power efficient as flying.
+## Locomotion Benchmarking
+To test the benefit of mixed modality locomotion, I performed a test to compare power consumption between the two movement methods. The robot began with a fresh, fully charged battery for each experiment. The robots were commanded to move forward and backward half a meter, one rolling, and one maintaing a hover height of 0.2 meters. The timer began as soon as the propellers began moving and stopped upon their halting when the battery discharged all power. This rudimentary test indicates that the rolling motion is four times as power efficient as flying.
 
-### Resources and References
-#### Hardware
+| Locomotion Method | Operating Time | Improvement |
+| :---------------- | :------------- | :---------- |
+| Flying            | 117 seconds    | N/A         |
+| Rolling           | 468 seconds    | 400%        |
+
+## Future Work
+While further design iteration would be necessary, future work would be the addition of varying sensors or a camera. This would allow for ability to perform visual Simultaneous Localization and Mapping (SLAM) for exploration spaces. A Crazyflie SLAM library using the current sensors, 4 Time of Flight sensors, is also available on [GitHub](https://github.com/khazit/CrazySLAM), though was not extensively tested or used with the current robot.
+
+Additionally, the same concepts could be applied to a larger, more robust quadrotor platform to increase payload and sensing capacity at the expense of the current small form-factor and cost.
+
+## Resources and References
+### Hardware
 The hardware for this project is a mix of off-the-shelf components and custom designed hardware to combine components.
 <div style="display: flex;">
   <div style="flex: 1;">
@@ -115,14 +121,13 @@ The hardware for this project is a mix of off-the-shelf components and custom de
 
 <!-- Add picture of full setup here -->
 
-#### Software
-Due to the community-development-based nature of the Crazyflie system, many software libraries and support exist.
+### Software
+Due to the community-development-based nature of the Crazyflie system, many software libraries and support already existed.
 The following libraries were used for this project:
 - Crazyflie Python Library (https://github.com/bitcraze/crazyflie-lib-python)
 - Crazyflie Firmware Library (https://github.com/bitcraze/crazyflie-firmware)
-- Crazyflie SLAM Library (https://github.com/khazit/CrazySLAM)
 
-#### Reference Material
+### Reference Material
 <!-- - Pi Camera with Crazyflie (https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/) -->
 - Cylindrical Drone (https://ieeexplore.ieee.org/document/6868259)
 - Droneball Inspiration (https://imazetech.com/)

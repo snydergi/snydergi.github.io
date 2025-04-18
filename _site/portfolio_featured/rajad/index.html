@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-04-18T14:25:43-05:00">
+  <meta property="article:published_time" content="2025-04-18T14:47:11-05:00">
 
 
 
@@ -269,7 +269,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a></li><li><a href="#project-objective">Project Objective</a></li><li><a href="#outline">Outline</a><ul><li><a href="#goals">Goals</a></li><li><a href="#development">Development</a></li><li><a href="#benchmarking">Benchmarking</a></li><li><a href="#resources-and-references">Resources and References</a><ul><li><a href="#hardware">Hardware</a></li><li><a href="#software">Software</a></li><li><a href="#reference-material">Reference Material</a></li></ul></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
+              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a></li><li><a href="#goals">Goals</a></li><li><a href="#mechanical-development">Mechanical Development</a></li><li><a href="#locomotion-benchmarking">Locomotion Benchmarking</a></li><li><a href="#future-work">Future Work</a></li><li><a href="#resources-and-references">Resources and References</a><ul><li><a href="#hardware">Hardware</a></li><li><a href="#software">Software</a></li><li><a href="#reference-material">Reference Material</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
 
             </nav>
           </aside>
@@ -302,24 +302,20 @@
         <h2 id="featured-video">Featured Video</h2>
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/Cmba8ZEuzpo" title="NU_MSR_Winter_Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
 
-<h2 id="project-objective">Project Objective</h2>
-<p>The goal of this project is to create hybrid locomotion robot that would blend the abilities of a conventional drone with the 
-simplicity of a wheeled robot. This project aims to create a robot with the advantageous
+<h2 id="goals">Goals</h2>
+<p>This project aims to create a robot with the advantageous
 qualities of both a quadrotor and a wheeled robot, with the ability to roll, jump, and hover briefly if necessary to explore its environment. 
 Where traditional wheeled robots are limited to the ground plane, this robot is capable of additional actuation to allow for vertical travel. 
-Where quadrotors typically are limited in flight time due to power consumption and battery weight capacity, having the robot ground-based allows
+Where quadrotors typically are constrained by flight time due to power consumption and battery weight capacity, having the robot ground-based allows
 for improved battery capacity and active time by reducing propellor output substantially.</p>
 
-<h2 id="outline">Outline</h2>
-
-<h3 id="goals">Goals</h3>
 <p>The must-have goal of this project is to be able to move successfully in an ideal environment: a smooth flat floor.
 Accomplishing this is the first step toward improving the robot to be able to navigate uneven surfaces and jump.</p>
 
 <p>The core goal of this project is to produce a robot capable of navigating uneven surfaces, with the ability to jump at least one foot vertically.
 This allows for climbing stairs or over debris to broaden applicability.</p>
 
-<h3 id="development">Development</h3>
+<h2 id="mechanical-development">Mechanical Development</h2>
 <p>Throughout the development of this project, a key consideration was the overall mass of the robot. Due to their incredibly small form factor as a quadrotor,
 the standard Crazyflie 2.1+ has a relatively small payload capacity, at a recommended 15 grams. To improve this capacity, I utilized the Crazyflie Thrust Upgrade,
 which provided stronger DC motors and higher thrust propellers. The final thrust was measured by placing the robot on a scale and putting slightly more mass attached
@@ -373,11 +369,38 @@ being the maximum mass the thrust would be able to counteract. The absolute maxi
   </div>
 </div>
 
-<h3 id="benchmarking">Benchmarking</h3>
-<p>To test the benefit of mixed modality locomotion, I performed a test to compare power consumption between the two movement methods. The robot began with a fresh, fully charged battery for each experiment. The robots were commanded to move forward and backward half a meter, one rolling, and one maintaing a hover height of 0.2 meters. The timer began as soon as the propellers began moving and stopped upon their halting when the battery discharged all power. The rolling movement method sustained motion for 468 seconds while the flying movement method sustained motion for just 117 seconds. This rudimentary test indicates that the rolling motion is four times as power efficient as flying.</p>
+<h2 id="locomotion-benchmarking">Locomotion Benchmarking</h2>
+<p>To test the benefit of mixed modality locomotion, I performed a test to compare power consumption between the two movement methods. The robot began with a fresh, fully charged battery for each experiment. The robots were commanded to move forward and backward half a meter, one rolling, and one maintaing a hover height of 0.2 meters. The timer began as soon as the propellers began moving and stopped upon their halting when the battery discharged all power. This rudimentary test indicates that the rolling motion is four times as power efficient as flying.</p>
 
-<h3 id="resources-and-references">Resources and References</h3>
-<h4 id="hardware">Hardware</h4>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Locomotion Method</th>
+      <th style="text-align: left">Operating Time</th>
+      <th style="text-align: left">Improvement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Flying</td>
+      <td style="text-align: left">117 seconds</td>
+      <td style="text-align: left">N/A</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Rolling</td>
+      <td style="text-align: left">468 seconds</td>
+      <td style="text-align: left">400%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="future-work">Future Work</h2>
+<p>While further design iteration would be necessary, future work would be the addition of varying sensors or a camera. This would allow for ability to perform visual Simultaneous Localization and Mapping (SLAM) for exploration spaces. A Crazyflie SLAM library using the current sensors, 4 Time of Flight sensors, is also available on <a href="https://github.com/khazit/CrazySLAM">GitHub</a>, though was not extensively tested or used with the current robot.</p>
+
+<p>Additionally, the same concepts could be applied to a larger, more robust quadrotor platform to increase payload and sensing capacity at the expense of the current small form-factor and cost.</p>
+
+<h2 id="resources-and-references">Resources and References</h2>
+<h3 id="hardware">Hardware</h3>
 <p>The hardware for this project is a mix of off-the-shelf components and custom designed hardware to combine components.</p>
 <div style="display: flex;">
   <div style="flex: 1;">
@@ -406,16 +429,15 @@ being the maximum mass the thrust would be able to counteract. The absolute maxi
 
 <!-- Add picture of full setup here -->
 
-<h4 id="software">Software</h4>
-<p>Due to the community-development-based nature of the Crazyflie system, many software libraries and support exist.
+<h3 id="software">Software</h3>
+<p>Due to the community-development-based nature of the Crazyflie system, many software libraries and support already existed.
 The following libraries were used for this project:</p>
 <ul>
   <li>Crazyflie Python Library (https://github.com/bitcraze/crazyflie-lib-python)</li>
   <li>Crazyflie Firmware Library (https://github.com/bitcraze/crazyflie-firmware)</li>
-  <li>Crazyflie SLAM Library (https://github.com/khazit/CrazySLAM)</li>
 </ul>
 
-<h4 id="reference-material">Reference Material</h4>
+<h3 id="reference-material">Reference Material</h3>
 <!-- - Pi Camera with Crazyflie (https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/) -->
 <ul>
   <li>Cylindrical Drone (https://ieeexplore.ieee.org/document/6868259)</li>
