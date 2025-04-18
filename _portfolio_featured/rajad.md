@@ -131,7 +131,6 @@ The following libraries were used for this project:
 <!-- - Pi Camera with Crazyflie (https://www.bitcraze.io/2017/07/crazyflie-based-quadcopter-with-raspberrypi-camera/) -->
 - Cylindrical Drone (https://ieeexplore.ieee.org/document/6868259)
 - Droneball Inspiration (https://imazetech.com/)
-- Gyroscope Inspiration (https://www.thingiverse.com/thing:802145)
 - Spherical Robot Literature Review (https://doi.org/10.1016/j.robot.2024.104657)
 
 ## Source code
