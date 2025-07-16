@@ -61,3 +61,6 @@ While conversion from mp4 to gif slowed all videos somewhat, take note of how mu
   <img src="/assets/images/projectImages/danceOrDie/CVdanceMPPort.gif" alt="Dance Comparison, MediaPipe" style="width: 100%; height: auto;">
 </div>
 <p style="text-align: center; font-style: italic; margin-top: 8px;">Dance comparison with MediaPipe</p>
+
+## Source code
+[Github Repository](https://github.com/snydergi/pose-assisted-dancing)
