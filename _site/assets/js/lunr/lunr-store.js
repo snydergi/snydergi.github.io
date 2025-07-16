@@ -24,10 +24,10 @@ var store = [{
         "teaser": "/assets/images/projectImages/undergradResearch/2DOFCapstanDriveCAD.png"
       },{
         "title": "Pose-Assisted Dancing",
-        "excerpt":"Try the website yourself! Click Here! Collaborators This project was done in collaboration with the Liana Tutt (https://github.com/tuttlr) for CSSE280: Intro to Web Development at Rose-Hulman Institute of Technology. Project Description This website allows for users to get recipes from countries around the world at the click of a button...","categories": [],
+        "excerpt":"Featured Video Collaborators This project was done in collaboration with the Joseph Blom (https://github.com/jrblom2). Project Objective Inspired by a lineage of dancing games from ‘Dance Dance Revolution’ to ‘Just Dance’, we sought to build a project that would utilize Computer Vision for pose comparison. Within this game, a camera is...","categories": [],
         "tags": [],
         "url": "/portfolio_other/danceOrDie/",
-        "teaser": "/assets/images/projectImages/recipeRoulette/globeSpin.gif"
+        "teaser": "/assets/images/projectImages/danceOrDie/danceOrDie.gif"
       },{
         "title": "Recipe Website",
         "excerpt":"Try the website yourself! Click Here! Collaborators This project was done in collaboration with the Liana Tutt (https://github.com/tuttlr) for CSSE280: Intro to Web Development at Rose-Hulman Institute of Technology. Project Description This website allows for users to get recipes from countries around the world at the click of a button...","categories": [],
