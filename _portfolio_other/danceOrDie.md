@@ -1,5 +1,5 @@
 ---
-title: "Pose-Assisted Dancing"
+title: "Pose-Comparison Dancing"
 author_profile: true
 key: 1
 toc: true
@@ -11,7 +11,7 @@ classes: wide
 
 ## Featured Video
 <iframe width="1208" height="688" src="https://www.youtube.com/embed/VxFWTcPtr0w" title="IntroToCV_FinalProjectDemo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+We used a custom made dance for this demonstration to ensure no copyright was infringed.
 
 ### Collaborators
 
@@ -34,3 +34,30 @@ to this use, as the orientation of the wire-frame should be weighted more heavil
 it is printed to the screen for the user to see.
 
 This project has functionality beyond the dancing game. It may also be used in different modes to compare a live pose to a still image, or to compare two figures on screen to each other.
+
+## Media
+While conversion from mp4 to gif slowed all videos somewhat, take note of how much slower the MediaPipe iterations are.
+<div>
+  <div style="display: inline-block; width: 48%; margin-right: 2%;">
+    <img src="/assets/images/projectImages/danceOrDie/CVdynamicPort.gif" alt="Dynamic Compare, YOLO" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      Two figures, YOLO
+    </p>
+  </div>
+  <div style="display: inline-block; width: 48%;">
+    <img src="/assets/images/projectImages/danceOrDie/CVdynamicMPPort.gif" alt="Dynamic Compare, MediaPipe" style="width: 100%; height: auto;">
+    <p style="text-align: center; font-style: italic; margin-top: 8px;">
+      Two figures, MediaPipe
+    </p>
+  </div>
+</div>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/danceOrDie/CVimgComparePort.gif" alt="Image Comparison, YOLO" style="width: 100%; height: auto;">
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Image comparison with YOLO</p>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/danceOrDie/CVdanceMPPort.gif" alt="Dance Comparison, MediaPipe" style="width: 100%; height: auto;">
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Dance comparison with MediaPipe</p>

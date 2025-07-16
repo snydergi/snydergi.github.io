@@ -23,8 +23,8 @@ var store = [{
         "url": "/portfolio_featured/undergradResearch/",
         "teaser": "/assets/images/projectImages/undergradResearch/2DOFCapstanDriveCAD.png"
       },{
-        "title": "Pose-Assisted Dancing",
-        "excerpt":"Featured Video Collaborators This project was done in collaboration with the Joseph Blom (https://github.com/jrblom2). Project Objective Inspired by a lineage of dancing games from ‘Dance Dance Revolution’ to ‘Just Dance’, we sought to build a project that would utilize Computer Vision for pose comparison. Within this game, a camera is...","categories": [],
+        "title": "Pose-Comparison Dancing",
+        "excerpt":"Featured Video We used a custom made dance for this demonstration to ensure no copyright was infringed. Collaborators This project was done in collaboration with the Joseph Blom (https://github.com/jrblom2). Project Objective Inspired by a lineage of dancing games from ‘Dance Dance Revolution’ to ‘Just Dance’, we sought to build a...","categories": [],
         "tags": [],
         "url": "/portfolio_other/danceOrDie/",
         "teaser": "/assets/images/projectImages/danceOrDie/danceOrDie.gif"
