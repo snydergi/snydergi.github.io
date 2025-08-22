@@ -153,13 +153,13 @@ defaults:
       layout: single
       author_profile: false
       share: true
-  # - scope:
-  #     path: ""
-  #     type: test_items
-  #   values:
-  #     layout: single
-  #     author_profile: false
-  #     share: true
+  - scope:
+      path: ""
+      type: test_items
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 collections:
   portfolio:

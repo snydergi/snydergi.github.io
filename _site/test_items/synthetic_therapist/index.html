@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Low-Cost Position-Controllable Planar Arm - Grayson Snyder</title>
-<meta name="description" content="CAD, Controls, Circuits">
+<!-- begin _includes/seo.html --><title>Synthetic Therapist Exoskeleton with LSTM - Grayson Snyder</title>
+<meta name="description" content="PyTorch, ROS, Real-Time">
 
 
   <meta name="author" content="Grayson Snyder">
@@ -22,15 +22,15 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Grayson Snyder">
-<meta property="og:title" content="Low-Cost Position-Controllable Planar Arm">
-<meta property="og:url" content="http://localhost:4000/portfolio_featured/undergradResearch/">
+<meta property="og:title" content="Synthetic Therapist Exoskeleton with LSTM">
+<meta property="og:url" content="http://localhost:4000/test_items/synthetic_therapist/">
 
 
-  <meta property="og:description" content="CAD, Controls, Circuits">
+  <meta property="og:description" content="PyTorch, ROS, Real-Time">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/projectImages/undergradResearch/2DOFCapstanDriveCAD.png">
+  <meta property="og:image" content="http://localhost:4000/assets/images/misc/underConstruction.jpg">
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/portfolio_featured/undergradResearch/">
+<link rel="canonical" href="http://localhost:4000/test_items/synthetic_therapist/">
 
 
 
@@ -269,7 +269,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#poster">Poster</a></li><li><a href="#overview">Overview</a></li><li><a href="#cad-model-and-photos">CAD Model and Photos</a></li></ul>
+              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a><ul><li><a href="#collaborators">Collaborators</a></li></ul></li><li><a href="#project-objective">Project Objective</a></li><li><a href="#results">Results</a></li><li><a href="#methodology">Methodology</a></li><li><a href="#source-code">Source code</a></li></ul>
 
             </nav>
           </aside>
@@ -279,8 +279,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Low-Cost Position-Controllable Planar Arm">
-    <meta itemprop="description" content="CAD, Controls, Circuits">
+    <meta itemprop="headline" content="Synthetic Therapist Exoskeleton with LSTM">
+    <meta itemprop="description" content="PyTorch, ROS, Real-Time">
     
     
 
@@ -288,7 +288,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/portfolio_featured/undergradResearch/" class="u-url" itemprop="url">Low-Cost Position-Controllable Planar Arm
+            <a href="http://localhost:4000/test_items/synthetic_therapist/" class="u-url" itemprop="url">Synthetic Therapist Exoskeleton with LSTM
 </a>
           </h1>
           
@@ -299,21 +299,33 @@
 
       <section class="page__content e-content" itemprop="text">
         <!-- Moved TOC to sidebar.html -->
-        <h2 id="poster">Poster</h2>
+        <h2 id="featured-video">Featured Video</h2>
+<!-- <iframe width="1208" height="688" src="https://www.youtube.com/embed/VxFWTcPtr0w" title="IntroToCV_FinalProjectDemo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+We used a custom made dance for this demonstration to ensure no copyright was infringed. -->
 
-<p><img src="/assets/images/projectImages/undergradResearch/IPROP_EOQ_Poster_FinalDraft.jpg" alt="Poster" /></p>
+<h3 id="collaborators">Collaborators</h3>
 
-<h2 id="overview">Overview</h2>
-<p>The goal of this project was to develop a two degree-of-freedom (DOF) planar robot arm that is consistent, robust, easily reproducible, and particularly, inexpensive, for use in ME 445, Robot Dynamics and Control, for in-class demonstrations, labs, and homework. A 2-DOF robot arm would be useful for application in ME 445 due to its ability to relay key concepts such as parameterization, kinematics, and feedback control, while remaining simple enough to be solved by hand. Throughout much of ME 445 many new topics are introduced with examples involving 2-DOF planar arms. Their relative simplicity allows for learning and reinforcement of applicable skills for higher-DOF robots while remaining demonstrable by hand calculation in a 50-minute class period. The project development was focused on the design and optimization of the components and robustness of the arm.</p>
+<p>This project was done under the guidance of <a href="https://github.com/LorenzoVianello95">Lorenzo Vianello</a>, a post-doc in the Neurorehabilitation and Neural Engineering Laboratory, led by <a href="https://www.sralab.org/researchers/jose-l-pons-phd">Dr. José L. Pons</a> at the <a href="https://www.sralab.org/research/abilitylabs/legs-walking-lab">Shirley Ryan AbilityLab Legs + Walking Lab</a>.</p>
 
-<h2 id="cad-model-and-photos">CAD Model and Photos</h2>
-<p><img src="/assets/images/projectImages/undergradResearch/2DOFCapstanDriveCAD.png" alt="CAD Model" /></p>
+<h2 id="project-objective">Project Objective</h2>
 
-<p><img src="/assets/images/projectImages/undergradResearch/projectImg.jpg" alt="Prototype" /></p>
+<p>This project aimed to improve patient post-stroke gait rehabilitation using a lower-limb exoskeleton with implementation of a machine learning model trained on patient-therapist interactions. The ‘Synthetic Therapist’ would take the place of the human therapist in an exoskeleton dyad rehabilitation system (link or explanation?), providing predictions from the model as inputs to the patient exoskeleton control loop.</p>
 
-<!-- ## Background
+<h2 id="results">Results</h2>
 
-## Development -->
+<p>The Synthetic Therapist successfully utilizes a Long Short-Term Memory (LSTM) model to accurately predict therapist reactions to patient joint inputs. While active, the wearer of the exoskeleton (ExoMotus-X2, Fourier Intelligence) has their gate assisted and corrected based on outputs of the LSTM being fed into the patient exoskeleton control loop. The Synthetic Therapist runs on a ROS1 Noetic node within the workspace. The model receives input from the subject exoskeleton at ~333Hz via subscriptions to ROS topics, then publishes the output of the LSTM on a ROS topic at ~333Hz, maintaining the real-time requirements of the human-exoskeleton interaction. This allows for a smooth adjustment to the wearers gait.</p>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/syntheticTherapist/SyntheticTherapistControlLoop.png" alt="Control Loop Block Diagram" style="width: 100%; height: auto;" />
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Control loop for Synthetic Therapist rehabilitation system.</p>
+
+<p>The model predicts therapist interactions for the patient with a high degree of accuracy. Models typically predict with less than 0.1 radian (~5.7 degrees) root mean square error when compared to therapist data from various patients. Most deviation in the model predictions from true data is seen in the lower amplitude peaks of the gait phase, which already often occur from the exoskeleton inertia causing small oscillation rather than it being a part of the true gait. Like any machine learning model, erroneous predictions may occur with a large error. Protections are established within the code to prevent large predictions that may be out of the range of motion from occurring.</p>
+
+<h2 id="methodology">Methodology</h2>
+
+<h2 id="source-code">Source code</h2>
+<p><a href="https://github.com/snydergi/SRALabProject">Github Repository</a></p>
 
         
       </section>
@@ -330,25 +342,15 @@
       <section class="page__share">
   
 
-  <!-- <a href="https://twitter.com/intent/tweet?text=Low-Cost+Position-Controllable+Planar+Arm%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2FundergradResearch%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <!-- <a href="https://twitter.com/intent/tweet?text=Synthetic+Therapist+Exoskeleton+with+LSTM%20http%3A%2F%2Flocalhost%3A4000%2Ftest_items%2Fsynthetic_therapist%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2FundergradResearch%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Ftest_items%2Fsynthetic_therapist%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2FundergradResearch%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Ftest_items%2Fsynthetic_therapist%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
-  <nav class="pagination">
-    
-      <a href="/portfolio_featured/toastbot/" class="pagination--pager" title="7-DOF Food Preparation
-">Previous</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">Next</a>
-    
-  </nav>
-
     </div>
 
     
