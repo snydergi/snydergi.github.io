@@ -6,7 +6,7 @@ var store = [{
         "teaser": "/assets/images/projectImages/rajad/stair_climb.gif"
       },{
         "title": "Synthetic Therapist Exoskeleton with LSTM",
-        "excerpt":"Featured Video Collaborators This project was done under the guidance of Lorenzo Vianello, a post-doc in the Neurorehabilitation and Neural Engineering Laboratory, led by Dr. José L. Pons at the Shirley Ryan AbilityLab Legs + Walking Lab. Project Objective This project aimed to improve post-stroke patient walking gait in rehabilitation...","categories": [],
+        "excerpt":"Featured Video Project Objective I aim to improve post-stroke patient walking gait in rehabilitation using a lower-limb exoskeleton with implementation of a machine learning model trained on patient-therapist interactions. The ‘Synthetic Therapist’ would take the place of the human therapist in an exoskeleton rehabilitation system providing predictions from the model...","categories": [],
         "tags": [],
         "url": "/portfolio_featured/synthetic_therapist/",
         "teaser": "/assets/images/projectImages/syntheticTherapist/syntheticTherapistTeaser.gif"
