@@ -36,7 +36,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-08-26T22:03:59-05:00">
+  <meta property="article:published_time" content="2025-08-27T00:22:14-05:00">
 
 
 
@@ -313,7 +313,7 @@ We used a custom made dance for this demonstration to ensure no copyright was in
 
 <h2 id="results">Results</h2>
 
-<p>The Synthetic Therapist successfully utilizes a Long Short-Term Memory (LSTM) model trained using PyTorch to accurately predict therapist reactions to patient joint inputs. While active, the wearer of the exoskeleton (ExoMotus-X2, Fourier Intelligence) has their gate assisted and corrected based on outputs of the LSTM being fed into the patient exoskeleton control loop. The Synthetic Therapist runs on a ROS1 Noetic node within the workspace. The model receives input joint positions and velocities from the subject exoskeleton then publishes the output of the LSTM, predicted therapist joint positions and velocities, in real-time to maintain requirements of the human-exoskeleton interaction. This allows for a smooth adjustment to the wearers gait with an average inference time less than 3 ms when the model was run on a Intel Core i9-14900HX CPU.</p>
+<p>The Synthetic Therapist successfully utilizes a Long Short-Term Memory (LSTM) model trained using PyTorch to accurately predict therapist reactions to patient joint inputs. While active, the wearer of the exoskeleton (ExoMotus-X2, Fourier Intelligence) has their gate assisted and corrected based on outputs of the LSTM being fed into the patient exoskeleton control loop. The Synthetic Therapist runs on a ROS1 Noetic node within the workspace. The model receives input joint positions and velocities from the subject exoskeleton then publishes the output of the LSTM, predicted therapist joint positions and velocities, in real-time to maintain requirements of the human-exoskeleton interaction. An average inference time less than 3 ms when the model was run on a Intel Core i9-14900HX CPU allows for a smooth adjustment to the wearers gait.</p>
 
 <div style="text-align: center;">
   <img src="/assets/images/projectImages/syntheticTherapist/SyntheticTherapistControlLoop.png" alt="Control Loop Block Diagram" style="width: 100%; height: auto;" />
