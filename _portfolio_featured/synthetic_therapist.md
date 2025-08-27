@@ -99,4 +99,4 @@ The main loop of the ROS node handles logic for calling the model for prediction
 This project was done under the guidance of [Lorenzo Vianello](https://lorenzovianello95.github.io/), a post-doc in the Neurorehabilitation and Neural Engineering Laboratory, led by [Dr. José L. Pons](https://www.sralab.org/researchers/jose-l-pons-phd) at the [Shirley Ryan AbilityLab Legs + Walking Lab](https://www.sralab.org/research/abilitylabs/legs-walking-lab).
 
 ## Source code
-[Github Repository](https://github.com/snydergi/SRALabProject)
+[Git Repository](https://github.com/snydergi/SRALabProject)
