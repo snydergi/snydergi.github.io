@@ -1,11 +1,11 @@
 ---
 title: "7-DOF Food Preparation"
 author_profile: true
-key: 1
+key: 2
 toc: true
 excerpt: "ROS2, MoveIt, RealSense"
 header:
-  teaser: /assets/images/projectImages/toastImages/toast_grab.gif
+  teaser: /assets/images/projectImages/toastImages/toast_grab_cropped.gif
 classes: wide
 ---
 ## Featured Video

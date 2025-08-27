@@ -1,7 +1,7 @@
 ---
 title: "Hybrid Locomotion Robot"
 author_profile: true
-key: 2
+key: 3
 toc: true
 excerpt: "Sensing, CAD, Prototyping"
 header:

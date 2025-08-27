@@ -1,0 +1,474 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Synthetic Therapist Exoskeleton with LSTM - Grayson Snyder</title>
+<meta name="description" content="PyTorch, ROS1, Real-Time">
+
+
+  <meta name="author" content="Grayson Snyder">
+  
+  <meta property="article:author" content="Grayson Snyder">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Grayson Snyder">
+<meta property="og:title" content="Synthetic Therapist Exoskeleton with LSTM">
+<meta property="og:url" content="http://localhost:4000/portfolio_featured/synthetic_therapist/">
+
+
+  <meta property="og:description" content="PyTorch, ROS1, Real-Time">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/projectImages/syntheticTherapist/syntheticTherapistTeaser.gif">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-08-26T22:03:59-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/portfolio_featured/synthetic_therapist/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+<link href="/feed.xml"
+  type="application/atom+xml" rel="alternate" title="Grayson Snyder Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.ico">
+<noscript>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+</noscript>
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Grayson Snyder
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resume/">Resume</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/misc/Headshot.jpg" alt="Grayson Snyder" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Grayson Snyder</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>MS in Robotics @ Northwestern</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i><span class="label">Evanston, IL</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/snydergi" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="mailto:grasnyder2001@gmail.com" rel="nofollow noopener noreferrer me"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/graysonsnyder/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  <!-- Moved TOC HERE from single.html -->
+  
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#featured-video">Featured Video</a><ul><li><a href="#collaborators">Collaborators</a></li></ul></li><li><a href="#project-objective">Project Objective</a></li><li><a href="#results">Results</a></li><li><a href="#methodology">Methodology</a><ul><li><a href="#data-processing">Data Processing</a></li><li><a href="#model-creation">Model Creation</a></li><li><a href="#ros-integration">ROS Integration</a></li></ul></li><li><a href="#source-code">Source code</a></li></ul>
+
+            </nav>
+          </aside>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Synthetic Therapist Exoskeleton with LSTM">
+    <meta itemprop="description" content="PyTorch, ROS1, Real-Time">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/portfolio_featured/synthetic_therapist/" class="u-url" itemprop="url">Synthetic Therapist Exoskeleton with LSTM
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        <!-- Moved TOC to sidebar.html -->
+        <h2 id="featured-video">Featured Video</h2>
+<!-- <iframe width="1208" height="688" src="https://www.youtube.com/embed/VxFWTcPtr0w" title="IntroToCV_FinalProjectDemo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+We used a custom made dance for this demonstration to ensure no copyright was infringed. -->
+
+<h3 id="collaborators">Collaborators</h3>
+
+<p>This project was done under the guidance of <a href="https://lorenzovianello95.github.io/">Lorenzo Vianello</a>, a post-doc in the Neurorehabilitation and Neural Engineering Laboratory, led by <a href="https://www.sralab.org/researchers/jose-l-pons-phd">Dr. José L. Pons</a> at the <a href="https://www.sralab.org/research/abilitylabs/legs-walking-lab">Shirley Ryan AbilityLab Legs + Walking Lab</a>.</p>
+
+<h2 id="project-objective">Project Objective</h2>
+
+<p>This project aimed to improve post-stroke patient walking gait in rehabilitation using a lower-limb exoskeleton with implementation of a machine learning model trained on patient-therapist interactions. The ‘Synthetic Therapist’ would take the place of the human therapist in an exoskeleton rehabilitation system providing predictions from the model as inputs to the patient exoskeleton control loop.</p>
+
+<h2 id="results">Results</h2>
+
+<p>The Synthetic Therapist successfully utilizes a Long Short-Term Memory (LSTM) model trained using PyTorch to accurately predict therapist reactions to patient joint inputs. While active, the wearer of the exoskeleton (ExoMotus-X2, Fourier Intelligence) has their gate assisted and corrected based on outputs of the LSTM being fed into the patient exoskeleton control loop. The Synthetic Therapist runs on a ROS1 Noetic node within the workspace. The model receives input joint positions and velocities from the subject exoskeleton then publishes the output of the LSTM, predicted therapist joint positions and velocities, in real-time to maintain requirements of the human-exoskeleton interaction. This allows for a smooth adjustment to the wearers gait with an average inference time less than 3 ms when the model was run on a Intel Core i9-14900HX CPU.</p>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/syntheticTherapist/SyntheticTherapistControlLoop.png" alt="Control Loop Block Diagram" style="width: 100%; height: auto;" />
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Control loop for Synthetic Therapist rehabilitation system.</p>
+
+<p>The model predicts therapist interactions for the patient with a high degree of accuracy. Models typically predict with less than 0.1 radian (~5.7 degrees) root mean square error when compared to therapist data from various patients. Most deviation in the model predictions from true data is seen in the lower amplitude peaks of the gait phase, which already often occur from the exoskeleton inertia causing small oscillation rather than it being a part of the true gait. Like any machine learning model, erroneous predictions may occur with a large error. Protections are established within the code to prevent large predictions that may be out of the range of motion from occurring.</p>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/syntheticTherapist/jt1_pos_error_histogram.png" alt="Error Histogram" style="width: 100%; height: auto;" />
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Error histogram for predictions vs. therapist 1 joint position 1 data.</p>
+
+<p>The Synthetic Therapist was developed to aid in walking gait rehabilitation, which is a complex procedure that requires input from doctors and therapists to alter and change therapy to best suit the patient. As such, a variety of parameters can be adjusted during the course of rehabilitation. As in the patient-therapist dyad setup with a virtual linkage, the stiffness, perceived as the amount of applied torque to the patient exoskeleton, can be adjusted so that the exoskeleton provides more or less input on the patients steps. A parameter acting as a joint threshold is adjustable to allow for predictions that go beyond a patients altered range of motion (ROM), if limited beyond normal ROM, to be capped at the specific patients ROM.</p>
+
+<p>The main model used in the Synthetic Therapist is also equipped to adjust the distance into the future that it predicts. The synchronized patient-therapist data from training often showed the therapists motion lagging behind the patients as they attempted to match the patient gait while also altering it. To improve on this, the Synthetic Therapist future distance parameter allows for the predictions to lead in front of the patients movement, effectively guiding their leg through the next step based on the previous inputs. The model can predict anywhere from the next time step (~3ms) to ~75ms ahead of the patient. While a small time delta, the result is a more focused and guided input to the control loop as the exoskeleton assists the patient.</p>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/syntheticTherapist/joint1and2trajectory.gif" alt="Joint Trajectory GIF" style="width: 100%; height: auto;" />
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Live patient data and predictions from RQT Multiplot showing predictions leading the subjects movement.</p>
+
+<h2 id="methodology">Methodology</h2>
+
+<h3 id="data-processing">Data Processing</h3>
+<p>Data was previously collected for other studies in an exoskeleton dyad setup with post-stroke patients, so there as a suitable supply of data for the training of this model. The data is a continuous file with two to four episodes of walking contained within, typically with a window duration of 10 minutes. The start of these episodes were determined based on which subject, the therapist or the patient, pressed a ‘synchronization’ button last, indicating that they were attempting to walk symmetrically. From there, the start was trimmed to be at the point of visual synchronization in the phase and approximate amplitude of the joints to capture only the desired synchronous walking. The end of each episode was determined by the subject who released the ‘synchronization’ button first.</p>
+
+<p>With all episodes determined for all nine patient-therapist dyads, each set of data is concatenated to make one patient file and one therapist file of suitable data for each pair. For the model training-validation-testing pipeline, we chose to divide the data in a 70-20-10 scheme. For each patient and therapist, the first 70% of the data was used for training the model, regardless of total concatenated length. Each of the chunks of training data from all patients was conglomerated, as was the therapist data. From the patient data, the desired inputs were selected from the total sample collection, which are four joint positions and four joint velocities. The same selections are likewise pulled from the therapist data.</p>
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/syntheticTherapist/SRA_DataDivision.png" alt="Data Division Diagram" style="width: 100%; height: auto;" />
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Division of data into training, validation, and testing sets.</p>
+
+<p>The model to be trained, a Long Short-Term Memory model (LSTM), utilizes a sliding window of memory referred to as a lookback window. The window is ‘sliding’ due to new data being added and the oldest data being removed at each step. Training used a specified lookback window of 50 timesteps or ~150ms. The feature for the model training is the patient data, with the target being the therapist data. The resultant shape of the feature and target is (50, 8) and (50, 1) respectively.</p>
+
+<h3 id="model-creation">Model Creation</h3>
+<p>To successfully predict therapist reactions for four joint positions and velocities, we implemented an approach using a number of Long Short-Term Memory (LSTM) models. The final model for the Synthetic Therapist was created as a combination of PyTorch’s LSTM and Linear layer classes. Eight models were trained, one for estimation of each joint position and velocity of the exoskeleton. Each submodel’s LSTM used an input size of 8, hidden size or 50, 1 LSTM layer, and batched data first. The Linear layers had 50 input features and one output feature to properly connect to the hidden layers of the LSTM and produce a single output value.</p>
+
+<p>Training and validation datasets are constructed with the conglomerated patient and therapist data. For faster training, a step size of 5 was used during dataset creation to effectively reduce the dataset size five-fold. This adjustment to dataset size did not have a meaningful impact on model performance. This process is performed for both the training and validation sets to be synthesized. Each model was trained for 150 epochs, with validation run at each epoch, on the batched dataset with a batch size of 256, shuffled data, and a learning rate of 0.00001 within the Adam optimizer.</p>
+
+<p>With eight models trained, in the interest of reducing overall inference time, the models were then stacked and combined into one model. The stacked model utilized as input the same as each individual model - a lookback window of patient kinematic values of size (50, 8). This input was passed to each model in series, then the outputs of each model were combined into a singular output. The output tensor contains the desired values for the subjects joint positions and velocities.</p>
+
+<h3 id="ros-integration">ROS Integration</h3>
+<p>For implementation of the prepared model with the current exoskeleton dyad setup, a ROS Noetic node was created to handle functions of the Synthetic Therapist. Key components of this work were 1) proper usage of data for use as the input to the model, and 2) the assurance of real-time performance with the model.</p>
+
+<p>For maintaining valid data in the simplest structure possible, we implement a Ring Buffer for data storage within the ROS node. The buffer has a maximum length of 50, matching that of the lookback window. Upon initiation of the node, patient joint data is appended to the buffer from ROS topic subscriptions until it becomes full. Only once full does the model begin prediction, as it requires the full lookback window size as input. Then, as new data arrives via the patient subscribers, the oldest data from the buffer is purged and the new data is added. This maintains the desired ‘sliding window’ effect desired for input into the model.</p>
+
+<p>The main loop of the ROS node handles logic for calling the model for prediction and publishing the predictions for use in the patient exoskeleton control loop. When run on a Intel Core i9-14900HX CPU, the model had an average inference time of less than 3 milliseconds. As such, the node is limited in rate to 333 Hz to match the frequency of incoming data from the patient’s exoskeleton. This speed is ideal for the real-time nature of the system, although due to differing hardware when running the model within the exoskeleton workspace on a Intel Xeon(R) Silver 4210R CPU, the model is only capable of ~7 millisecond inference time. The slower hardware results in a prediction publication frequency of ~150 Hz. This decreased rate did not cause change in perceived forces during preliminary closed-loop tests, likely to it still being beyond human reaction time.</p>
+
+<h2 id="source-code">Source code</h2>
+<p><a href="https://github.com/snydergi/SRALabProject">Github Repository</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <!-- <a href="https://twitter.com/intent/tweet?text=Synthetic+Therapist+Exoskeleton+with+LSTM%20http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Fsynthetic_therapist%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Fsynthetic_therapist%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a> -->
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fportfolio_featured%2Fsynthetic_therapist%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/portfolio_featured/rajad/" class="pagination--pager" title="Hybrid Locomotion Robot
+">Previous</a>
+    
+    
+      <a href="/portfolio_featured/toastbot/" class="pagination--pager" title="7-DOF Food Preparation
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/snydergi" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Grayson Snyder. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

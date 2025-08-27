@@ -1,7 +1,7 @@
 ---
 title: "Pose-Comparison Dancing"
 author_profile: true
-key: 1
+key: 2
 toc: true
 excerpt: "Computer Vision, YOLO, MediaPipe"
 header:
