@@ -10,8 +10,7 @@ classes: wide
 ---
 
 ## Featured Video
-<!-- <iframe width="1208" height="688" src="https://www.youtube.com/embed/VxFWTcPtr0w" title="IntroToCV_FinalProjectDemo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-We used a custom made dance for this demonstration to ensure no copyright was infringed. -->
+<iframe width="901" height="507" src="https://www.youtube.com/embed/KWM4D2fft6M" title="Synthetic Therapist, Grayson Snyder Final Project, MS in Robotics @ Northwestern University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Project Objective
 
@@ -30,9 +29,9 @@ The Synthetic Therapist successfully utilizes a Long Short-Term Memory (LSTM) mo
 While active, the wearer of the exoskeleton (ExoMotus-X2, Fourier Intelligence) has their gate assisted and corrected based on outputs of the LSTM being fed into the patient exoskeleton control loop.
 
 <div style="text-align: center;">
-  <img src="/assets/images/projectImages/syntheticTherapist/joint1and2trajectory.gif" alt="Joint Trajectory GIF" style="width: 100%; height: auto;">
+  <img src="/assets/images/projectImages/syntheticTherapist/jointPlots.png" alt="Joint Trajectory Example" style="width: 100%; height: auto;">
 </div>
-<p style="text-align: center; font-style: italic; margin-top: 8px;">Live patient data and predictions from RQT Multiplot showing predictions leading the subjects movement.</p>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Example patient and therapist data with predictions overlayed.</p>
 
 The Synthetic Therapist runs on a ROS node within the workspace. The model receives input joint positions and velocities from the subject exoskeleton then publishes the output of the LSTM, predicted therapist joint positions and velocities, in real-time to maintain requirements of the human-exoskeleton interaction. An average inference time less than 3 ms allows for a smooth adjustment to the wearers gait.
 
