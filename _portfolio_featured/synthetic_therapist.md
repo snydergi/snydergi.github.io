@@ -12,9 +12,9 @@ classes: wide
 ## Featured Video
 <iframe width="901" height="507" src="https://www.youtube.com/embed/KWM4D2fft6M" title="Synthetic Therapist, Grayson Snyder Final Project, MS in Robotics @ Northwestern University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Project Objective
+## Objective
 
-I aim to improve post-stroke patient walking gait in rehabilitation using a lower-limb exoskeleton with implementation of a machine learning model trained on patient-therapist interactions. The 'Synthetic Therapist' would take the place of the human therapist in an exoskeleton rehabilitation system providing predictions from the model as inputs to the patient exoskeleton control loop.
+This project aims to improve post-stroke patient walking gait in rehabilitation using a lower-limb exoskeleton with implementation of a machine learning model trained on patient-therapist interactions. The 'Synthetic Therapist' would take the place of the human therapist in an exoskeleton rehabilitation system providing predictions from the model as inputs to the patient exoskeleton control loop.
 
 ## Outcomes
 ### System Architecture
@@ -46,21 +46,29 @@ The model predicts therapist interactions for the patient with a high degree of 
 Each model option predicts with less than 0.1 radian (~5.7 degrees) root mean square error when compared to therapist data from various patients. Most deviation in the model predictions from true data is seen in the lower amplitude peaks of the gait phase, which already often occur from the exoskeleton inertia causing small oscillation rather than it being a part of the true gait. Like any machine learning model, erroneous predictions may occur with a large error. Protections are established within the code to prevent large predictions that may be out of the range of motion from occurring.
 
 ### Dynamic Reconfiguration
-The Synthetic Therapist was developed to aid in walking gait rehabilitation, which is a complex procedure that requires input from doctors and therapists to alter and change therapy to best suit the patient. As such, a variety of parameters can be adjusted during the course of rehabilitation. As in the patient-therapist dyad setup with a virtual linkage, the stiffness, perceived as the amount of applied torque to the patient exoskeleton, can be adjusted so that the exoskeleton provides more or less input on the patients steps. A parameter acting as a joint threshold is adjustable to allow for predictions that go beyond a patients altered range of motion (ROM), if limited beyond normal ROM, to be capped at the specific patients ROM. 
-
-The main model used in the Synthetic Therapist is also equipped to adjust the distance into the future that it predicts. The synchronized patient-therapist data from training often showed the therapists motion lagging behind the patients as they attempted to match the patient gait while also altering it. To improve on this, the Synthetic Therapist future distance parameter allows for the predictions to lead in front of the patients movement, effectively guiding their leg through the next step based on the previous inputs. The model can predict anywhere from the next time step (~3ms) to ~75ms ahead of the patient. While a small time delta, the result is a more focused and guided input to the control loop as the exoskeleton assists the patient.
+The Synthetic Therapist was developed to aid in walking gait rehabilitation, which is a complex procedure that requires input from doctors and therapists to alter and change therapy to best suit the patient. As such, a variety of parameters can be adjusted during the course of rehabilitation, including the stiffness or perceived torque applied to the patient exoskeleton, a joint threshold for patients with limited range of motion, and the distance into the future the model predicts from ~3ms to ~75ms. The last parameter is used to make the Synthetic Therapist more or less anticipatory and leading of the patients motion, allowing varying amounts of guidance through the step.
 
 ## Methodology
 
+### Data Collection
+Data was previously collected for other studies in an exoskeleton dyad setup with post-stroke patients, so there as a suitable supply of data for the training of this model. 
+
+<div style="text-align: center;">
+  <img src="/assets/images/projectImages/syntheticTherapist/dataCollection.jpeg" alt="Data Collection" style="width: 100%; height: auto;">
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 8px;">Data collection in exoskeleton dyadic setup. In each image, patient is on the left and therapist is on the right.</p>
+
+The data is a continuous file with two to four episodes of walking contained within, typically with a window duration of 10 minutes. The start of these episodes were determined based on which subject, the therapist or the patient, pressed a 'synchronization' button last, indicating that they were attempting to walk symmetrically. From there, the start was trimmed to be at the point of visual synchronization in the phase and approximate amplitude of the joints to capture only the desired synchronous walking. The end of each episode was determined by the subject who released the 'synchronization' button first. 
+
 ### Data Processing
-Data was previously collected for other studies in an exoskeleton dyad setup with post-stroke patients, so there as a suitable supply of data for the training of this model. The data is a continuous file with two to four episodes of walking contained within, typically with a window duration of 10 minutes. The start of these episodes were determined based on which subject, the therapist or the patient, pressed a 'synchronization' button last, indicating that they were attempting to walk symmetrically. From there, the start was trimmed to be at the point of visual synchronization in the phase and approximate amplitude of the joints to capture only the desired synchronous walking. The end of each episode was determined by the subject who released the 'synchronization' button first. 
+With all episodes determined for all nine patient-therapist dyads, each set of data is concatenated to make one patient file and one therapist file of suitable data for each pair. For the model training-validation-testing pipeline, we chose to divide the data in a 70-20-10 scheme.
 
 <div style="text-align: center;">
   <img src="/assets/images/projectImages/syntheticTherapist/SRA_DataDivision.png" alt="Data Division Diagram" style="width: 100%; height: auto;">
 </div>
 <p style="text-align: center; font-style: italic; margin-top: 8px;">Division of data into training, validation, and testing sets.</p>
 
-With all episodes determined for all nine patient-therapist dyads, each set of data is concatenated to make one patient file and one therapist file of suitable data for each pair. For the model training-validation-testing pipeline, we chose to divide the data in a 70-20-10 scheme. For each patient and therapist, the first 70% of the data was used for training the model, regardless of total concatenated length. Each of the chunks of training data from all patients was conglomerated, as was the therapist data. From the patient data, the desired inputs were selected from the total sample collection, which are four joint positions and four joint velocities. The same selections are likewise pulled from the therapist data.
+For each patient and therapist, the first 70% of the data was used for training the model, regardless of total concatenated length. Each of the chunks of training data from all patients was conglomerated, as was the therapist data. From the patient data, the desired inputs were selected from the total sample collection, which are four joint positions and four joint velocities. The same selections are likewise pulled from the therapist data.
 
 The model to be trained, a Long Short-Term Memory model (LSTM), utilizes a sliding window of memory referred to as a lookback window. The window is 'sliding' due to new data being added and the oldest data being removed at each step. Training used a specified lookback window of 50 timesteps or ~150ms. The feature for the model training is the patient data, with the target being the therapist data. The resultant shape of the feature and target is (50, 8) and (50, 1) respectively.
 
